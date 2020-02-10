@@ -139,7 +139,7 @@ body {
   width: 13px;
   border-radius: 10px;
   border: none;
-  display: inline-block;
+  display: inline-block ;
   cursor: pointer;
   box-shadow: 1px 0px 3px 1px #252121;
 }
