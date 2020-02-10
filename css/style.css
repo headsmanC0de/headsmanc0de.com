@@ -120,17 +120,16 @@ body {
   width: auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   background-color: #414141;
   border-radius: 12px 12px 0px 0px;
 }
 
 .bar__buttoms {
   height: 25px;
-  width: 50px;
+  width: 60px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-left: 10px;
 }
 
@@ -138,8 +137,7 @@ body {
   height: 13px;
   width: 13px;
   border: none;
-  display: flex;
-  border-radius: 50px;
+  border-radius: 10px;
   cursor: pointer;
   box-shadow: 1px 0px 3px 1px #252121;
 }
