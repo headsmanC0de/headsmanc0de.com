@@ -136,7 +136,7 @@ body {
 
 .stat_button {
   height: 13px;
-  width: 13px;
+  width: 5px;
   border: none;
   display: flex;
   cursor: pointer;
