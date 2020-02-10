@@ -126,8 +126,12 @@ body {
 }
 
 .bar__buttoms {
-  width: 60px;
-  margin: 10px 20px;
+  height: 25px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 10px;
 }
 
 .stat_button {
