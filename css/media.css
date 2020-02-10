@@ -1,5 +1,11 @@
 @media (max-width: 680px) {
-    .header__nav {
-        display: none;
-    }
+  .header__nav {
+    display: none;
+  }
+  .bar__buttoms {
+    width: 90px;
+  }
+  .stat__buttoms {
+    height: 21px;
+  }
 }

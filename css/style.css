@@ -8,6 +8,7 @@ body {
   margin: 0;
   font-family: "JetBrains Mono", sans-serif;
   font-size: 14px;
+  font-display: auto;
   color: #fff;
   -webkit-font-smoothing: antialiased;
   background-color: #b94a3e;
