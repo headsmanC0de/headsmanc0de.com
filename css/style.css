@@ -136,9 +136,10 @@ body {
 
 .stat_button {
   height: 13px;
-  width: 5px;
+  width: 13px;
   border: none;
   display: flex;
+  border-radius: 50px;
   cursor: pointer;
   box-shadow: 1px 0px 3px 1px #252121;
 }
