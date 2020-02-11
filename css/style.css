@@ -139,7 +139,6 @@ body {
   width: 13px;
   border: none;
   border-radius: 10px;
-  cursor: pointer;
   box-shadow: 1px 0px 3px 1px #252121;
 }
 
@@ -153,11 +152,6 @@ body {
 
 .green--btn {
   background-color: #28c941;
-}
-
-.stat_button:focus {
-  background-color: silver;
-  outline: 0;
 }
 
 /* Footer */
