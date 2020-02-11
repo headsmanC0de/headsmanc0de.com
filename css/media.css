@@ -1,7 +1,11 @@
 @media (max-width: 850px) {
+  .header {
+    padding: 0 35px;
+  }
   .console__inner {
     height: 275px;
     min-width: 300px;
+    margin: 25px 30px 25px 30px;
   }
 }
 
