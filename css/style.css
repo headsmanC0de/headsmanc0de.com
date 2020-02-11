@@ -263,7 +263,3 @@ body {
 ::-webkit-scrollbar-track:hover {
   background-color: #fff;
 }
-pre {
-  margin: 80px;
-  line-height: 12px;
-}

@@ -2,6 +2,19 @@
 *,
 *::before,
 *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html {
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: subpixel-antialiased !important;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 h1,
