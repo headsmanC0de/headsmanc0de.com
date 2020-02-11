@@ -1,4 +1,8 @@
 @media (max-width: 850px) {
+  .console__inner {
+    height: 70vh;
+    min-width: 300px;
+  }
 }
 
 
@@ -14,7 +18,7 @@
         display: block;
     }
   .console__inner {
-    height: 275px;
+    height: 60vh;
     min-width: 300px;
   }
 }
