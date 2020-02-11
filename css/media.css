@@ -1,6 +1,6 @@
 @media (max-width: 850px) {
-  .header {
-    padding: 0 35px;
+  .container {
+    padding: 0 10px;
   }
   .console__inner {
     height: 275px;
