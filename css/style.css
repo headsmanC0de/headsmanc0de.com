@@ -307,30 +307,41 @@ body {
   display: flex;
 }
 .contact__card {
-  height: 150px;
+  height: 185px;
   width: 400px;
   margin: auto;
 }
 .title__card {
   text-align: center;
   font-size: 20px;
-  margin-bottom: 10px;
+  margin-top: 10px;
 }
 .footer__card {
-  height: 100px;
+  height: 80px;
   width: 240px;
   margin: auto;
   border-radius: 10px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .footer__card > a > img {
-  height: 60px;
-  width: 60px;
-  margin: 10px;
+  height: 50px;
+  width: 50px;
+  margin: 0 10px;
 }
-
-
+.copyright {
+  margin-top: 10px;
+  text-align: center;
+}
+.copyright > a {
+  text-decoration: none;
+  color: #cecece;
+}
+.copyright > a:hover {
+  text-decoration: underline;
+  color: rgb(255, 116, 66);
+}
 
 
 

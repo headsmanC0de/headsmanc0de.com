@@ -32,6 +32,16 @@
     min-width: 300px;
   }
 }
+@media (max-width: 670px) {
+  .features {
+    height: 635px;
+  }
+  .features__item {
+    width: 50%;
+
+  }
+  
+}
 /* Mobile */
 @media (max-width: 450px) {
   .features {
