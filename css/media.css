@@ -11,15 +11,14 @@
     height: 430px;
   }
 }
-@media (max-width: 700px) {
-  .features {
-    height: 610px;
-  }
-  .features__item {
-    width: 50%;
+@media (max-width: 743px) {
+  .console__input_text_pc_tablet {
+    display: initial;
+    animation: none;
+    overflow: visible;
+    white-space: normal;
   }
 }
-
 @media (max-width: 680px) {
   .header__nav {
     display: none;
@@ -33,6 +32,7 @@
     min-width: 300px;
   }
 }
+/* Mobile */
 @media (max-width: 450px) {
   .features {
     height: 1175px;

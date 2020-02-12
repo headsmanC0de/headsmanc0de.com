@@ -224,8 +224,8 @@ body {
   letter-spacing: 1px;
 }
 
-.console__input_text {
-  width: 65ch;
+.console__input_text_pc_tablet {
+  width: 67ch;
   letter-spacing: 2px;
   font-size: 16px;
   margin: 10px 0 5px 10px;
@@ -234,7 +234,7 @@ body {
   overflow: hidden;
   border-right: 2px solid white;
   animation: flashing-border 0.75s step-end infinite,
-  printed-text 4s steps(74);
+  printed-text 4s steps(67);
 }
 @keyframes flashing-border {
   0% {
