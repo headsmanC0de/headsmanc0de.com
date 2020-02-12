@@ -235,9 +235,6 @@ body {
   line-height: 1.2;
   color: #949aa0;
 }
-.second--floor {
-  margin-top: 0px;
-}
 /* SkrollBar */
 
 ::-webkit-scrollbar {
