@@ -233,8 +233,7 @@ body {
   white-space: nowrap;
   overflow: hidden;
   border-right: 2px solid white;
-  animation: flashing-border 0.75s step-end infinite,
-  printed-text 4s steps(67);
+  animation: flashing-border 0.75s step-end infinite, printed-text 4s steps(67);
 }
 @keyframes flashing-border {
   0% {
@@ -297,6 +296,44 @@ body {
   line-height: 1.2;
   color: #949aa0;
 }
+
+/* Footer */
+.footer {
+  height: 200px;
+  margin: 100px 0 0 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 2px 10px 0 #000;
+  box-shadow: 0 2px 10px 0 #000;
+  display: flex;
+}
+.contact__card {
+  height: 150px;
+  width: 400px;
+  margin: auto;
+}
+.title__card {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.footer__card {
+  height: 100px;
+  width: 240px;
+  margin: auto;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+.footer__card > a > img {
+  height: 60px;
+  width: 60px;
+  margin: 10px;
+}
+
+
+
+
+
 /* SkrollBar */
 
 ::-webkit-scrollbar {
