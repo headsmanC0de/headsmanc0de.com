@@ -11,13 +11,13 @@
     height: 430px;
   }
 }
-@media (max-width:700px) {
+@media (max-width: 700px) {
   .features {
     height: 610px;
   }
   .features__item {
     width: 50%;
-}
+  }
 }
 
 @media (max-width: 680px) {
@@ -25,19 +25,19 @@
     display: none;
   }
   /* Burger */
-    .burger {
-        display: block;
-    }
+  .burger {
+    display: block;
+  }
   .console__inner {
     height: 275px;
     min-width: 300px;
   }
 }
-@media (max-width:450px) {
+@media (max-width: 450px) {
   .features {
     height: 1175px;
   }
   .features__item {
     width: 100%;
-}
+  }
 }
