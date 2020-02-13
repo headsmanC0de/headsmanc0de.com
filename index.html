@@ -30,23 +30,24 @@
     <meta name="msapplication-wide310x150logo" content="./images/favicon/widetile.png" />
     <meta name="msapplication-square310x310logo" content="./images/favicon/largetile.png" />
     <title>>_headsmanc0de</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
     <!-- Header -->
-    <header class="header">
+    <header class="header jsHeader">
         <div class="container">
             <div class="header__inner">
                 <div class="header__logo">
-                    <a href="#">>_headsmanc0de</a>
+                    <a href="#" data-scroll="#console">>_headsmanc0de</a>
                 </div>
-                <nav class="header__nav">
-                    <a href="#" class="nav_link">Portfolio</a>
-                    <a href="#" class="nav_link">Skills</a>
+                <nav class="header__nav" id="nav">
+                    <a href="#" class="nav_link" data-scroll="#portfolio">Portfolio</a>
+                    <a href="#" class="nav_link" data-scroll="#features">Skills</a>
                     <a href="#" class="nav_link">About Me</a>
-                    <a href="#" class="nav_link">Contact</a>
+                    <a href="#" class="nav_link" data-scroll="#footer">Contact</a>
                 </nav>
-                <div class="burger">
+                <div class="burger" type="button" id="navToggle">
                     <span class="burger__item">Menu</span>
                 </div>
             </div>
@@ -56,29 +57,31 @@
     </header>
     <!-- /Header -->
     <!-- Console -->
-    <div class="container">
-        <div class="console__inner">
-            <div class="statusbar">
-                <div class="bar__buttoms">
-                    <div class="stat__button red--btn"></div>
-                    <div class="stat__button yellow--btn"></div>
-                    <div class="stat__button green--btn"></div>
+    <div class="console jsconsole" id="console">
+        <div class="container">
+            <div class="console__inner">
+                <div class="statusbar">
+                    <div class="bar__buttoms">
+                        <div class="stat__button red--btn"></div>
+                        <div class="stat__button yellow--btn"></div>
+                        <div class="stat__button green--btn"></div>
+                    </div>
+                    <div class="console_header">
+                        <img src="./images/house.png" alt="Terminal" />
+                        <p>Terminal</p>
+                    </div>
                 </div>
-                <div class="console_header">
-                    <img src="./images/house.png" alt="Terminal" />
-                    <p>Terminal</p>
+                <div class="console__input">
+                    <p class="console__input_text_pc_tablet">
+                        $ C:\Users\headsmanc0de> Hello World!The matrix has you...
+                    </p>
                 </div>
-            </div>
-            <div class="console__input">
-                <p class="console__input_text_pc_tablet">
-                    $ C:\Users\headsmanc0de> Hello World!The matrix has you...
-                </p>
             </div>
         </div>
     </div>
     <!-- /Console -->
     <!-- Features -->
-    <div class="features">
+    <div class="features" id="features">
         <div class="container__box">
             <div class="features__item">
                 <img class="features__icon" src="./images/features/feature-1.png" alt="" />
@@ -125,9 +128,21 @@
         </div>
     </div>
     <!-- /Features -->
-
+    <!-- Portfolio -->
+    <div class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="portfolio__inner">
+                <div class="portfolio__item">
+                    <h5>Minimo</h5>
+                    <img src="/images/portfolio/minimo.jpg" alt="minimo">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- /Portfolio -->
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="contact__card">
             <div class="title__card">Social and Contact</div>
             <div class="footer__card">
@@ -138,12 +153,14 @@
             <div class="copyright">
                 Copyright© 2020.
                 <br> All Rights Reserved.
-                <br> Made by <a href="https://headsmanc0de.com/">_headsmanc0de</a>
+                <br> Made by <a href="">_headsmanc0de</a>
             </div>
         </div>
 
     </footer>
     <!-- /Footer -->
+    <!-- JavaScript -->
+    <script src="/js/app.js"></script>
 </body>
 
 </html>
