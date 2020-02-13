@@ -203,7 +203,7 @@ body {
   height: 13px;
   width: 13px;
   border: none;
-  border-radius: 10px;
+  border-radius: 50%;
   -webkit-box-shadow: 1px 0px 3px 1px #252121;
   box-shadow: 1px 0px 3px 1px #252121;
 }
