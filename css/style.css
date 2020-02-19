@@ -3,6 +3,7 @@
   src: local("JetBrains Mono Regular"), local("JetBrainsMono-Regular"), url("../fonts/JetBrainsMono-Regular.woff2") format("woff2"), url("../fonts/JetBrainsMono-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: auto;
 }
 
 @font-face {
@@ -10,6 +11,7 @@
   src: local("JetBrains Mono Bold"), local("JetBrainsMono-Bold"), url("../fonts/JetBrainsMono-Bold.woff2") format("woff2"), url("../fonts/JetBrainsMono-Bold.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: auto;
 }
 
 html {
@@ -361,4 +363,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .statusbar__title img {
   height: 18px;
+}
+
+.console_textarea {
+  padding: 10px;
+}
+
+.console_textarea a {
+  color: #fff;
+}
+
+.console_textarea a:hover {
+  color: #4b48d4;
 }
