@@ -1,0 +1,45 @@
+@import "./_vars"; 
+
+@font-face 
+    font-family: 'JetBrainsMono'
+    src: local("JetBrains Mono Regular"), local("JetBrainsMono-Regular"), url('../fonts/JetBrainsMono-Regular.woff2') format("woff2"), url('../fonts/JetBrainsMono-Regular.woff') format("woff")
+    font-weight: normal
+    font-style: normal
+
+
+@font-face 
+    font-family: 'JetBrainsbold'
+    src: local("JetBrains Mono Bold"), local("JetBrainsMono-Bold"), url('../fonts/JetBrainsMono-Bold.woff2') format("woff2"), url('../fonts/JetBrainsMono-Bold.woff') format("woff")
+    font-weight: normal
+    font-style: normal
+
+html 
+    font-size: 15px
+
+body
+    margin: 0
+    padding: 0
+    font-family: 'JetBrainsMono', sans-serif
+    font-size: 1rem
+    color: $black
+    background-color: #ffffff
+    background-image: url(http://www.transparenttextures.com/patterns/shattered.png)
+
+
+h1, h2, h3, h4, h5 ,h6
+    margin: 0
+
+*,
+*:before,
+*:after 
+    box-sizing: border-box
+
+// Blocks
+@import "./blocks/_container"
+@import "./blocks/header_elements/_header"
+@import "./blocks/header_elements/_user"
+@import "./blocks/header_elements/_nav"
+@import "./blocks/intro_elements/_intro"
+@import "./blocks/intro_elements/_social"
+@import "./blocks/_btn"
+@import "./blocks/intro_elements/_console"

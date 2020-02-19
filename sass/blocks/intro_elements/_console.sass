@@ -1,0 +1,67 @@
+.intro__console 
+    background-color: $black
+    border-radius: 12px
+    margin-top: 80px
+    box-shadow: 4px 5px 10px rgba(#000,.7)
+
+.statusbar
+    height: 25px
+    background-color: $gray
+    border-radius: 12px 12px 3px 3px
+    display: flex
+    align-items: center
+
+.statusbar_btns
+    padding: 5px 7px
+    display: flex
+    justify-content: space-between
+    width: 71px
+    position: absolute
+
+.statusbar_btn
+    height: 14px
+    width: 14px
+    background-color: $black
+    border-radius: 50%
+    cursor: pointer
+    box-shadow: 1px 1px 2px
+
+    &--red 
+        background-color:#f7453c
+        &:hover
+            background-color: darken(#f7453c, 10%)
+    
+    &--yellow
+        background-color:#ffbd2e
+        &:hover
+            background-color: darken(#ffbd2e, 10%)
+    
+    &--green
+        background-color:#28c941
+        &:hover
+            background-color: darken(#28c941, 10%)
+
+.statusbar__title
+    width: 100%
+    padding: 5px
+    display: flex
+    justify-content: center
+    align-items: center
+    cursor: pointer
+    color: $white
+    &:hover
+        color: darken($white, 20%)
+    & img
+        height: 18px
+
+.console_textarea
+    height: 100%
+    width: 100%
+    padding: 30px 10px 10px 10px
+    margin-top: -25px
+    color: $white
+
+    & a 
+        color: $white
+        &:hover
+            color: #2825da

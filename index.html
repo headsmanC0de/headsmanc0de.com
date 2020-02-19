@@ -1,170 +1,88 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 viewport-fit=cover" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./css/default.css" />
-    <link rel="stylesheet" href="./css/fonts.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/media.css" />
-    <!--Favicon-->
-    <link rel="shortcut icon" href="./images/favicon/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" sizes="57x57" href="./images/favicon/apple-touch-icon-57x57.png" />
-    <link rel="apple-touch-icon" sizes="60x60" href="./images/favicon/apple-touch-icon-60x60.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="./images/favicon/apple-touch-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="76x76" href="./images/favicon/apple-touch-icon-76x76.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="./images/favicon/apple-touch-icon-114x114.png" />
-    <link rel="apple-touch-icon" sizes="120x120" href="./images/favicon/apple-touch-icon-120x120.png" />
-    <link rel="apple-touch-icon" sizes="144x144" href="./images/favicon/apple-touch-icon-144x144.png" />
-    <link rel="apple-touch-icon" sizes="152x152" href="./images/favicon/apple-touch-icon-152x152.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon-180x180.png" />
-    <link rel="icon" type="image/png" href="./images/favicon/favicon-16x16.png" sizes="16x16" />
-    <link rel="icon" type="image/png" href="./images/favicon/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="./images/favicon/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/png" href="./images/favicon/android-chrome-192x192.png" sizes="192x192" />
-    <meta name="msapplication-square70x70logo" content="./images/favicon/smalltile.png" />
-    <meta name="msapplication-square150x150logo" content="./images/favicon/mediumtile.png" />
-    <meta name="msapplication-wide310x150logo" content="./images/favicon/widetile.png" />
-    <meta name="msapplication-square310x310logo" content="./images/favicon/largetile.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/style.css">
     <!-- Meta Search -->
     <meta name="description" content="Junior Front-end Developer" />
-    <meta name="keywords" content="Junior Front-end Developer, development, website" />
+    <meta name="keywords" content="Junior Front-end Developer, development website, bots" />
     <meta name="google" content="notranslate" />
-
-    <title>>_headsmanc0de</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>_headsmanc0de</title>
 </head>
-
 <body>
     <!-- Header -->
-    <header class="header jsHeader">
+    <!-- Begin .header -->
+    <header class="header">
+        <!-- Begin .container -->
         <div class="container">
+            <!-- Begin .header__inner -->
             <div class="header__inner">
-                <div class="header__logo">
-                    <a href="#" data-scroll="#console">>_headsmanc0de</a>
-                </div>
-                <nav class="header__nav" id="nav">
-                    <a href="#" class="nav_link" data-scroll="#portfolio">Portfolio</a>
-                    <a href="#" class="nav_link" data-scroll="#features">Skills</a>
-                    <a href="#" class="nav_link">About Me</a>
-                    <a href="#" class="nav_link" data-scroll="#footer">Contact</a>
-                </nav>
-                <div class="burger" id="navToggle">
-                    <span class="burger__item">Menu</span>
-                </div>
-            </div>
-            <!-- /Header Inner -->
-        </div>
-        <!-- /Container -->
-    </header>
-    <!-- /Header -->
-    <!-- Console -->
-    <div class="console jsconsole" id="console">
-        <div class="container ">
-            <div class="console__inner">
-                <div class="statusbar">
-                    <div class="bar__buttoms">
-                        <div class="stat__button red--btn"></div>
-                        <div class="stat__button yellow--btn"></div>
-                        <div class="stat__button green--btn"></div>
-                    </div>
-                    <div class="console_header">
-                        <img src="./images/house.png" alt="Terminal" />
-                        <p>Terminal</p>
-                    </div>
-                </div>
-                <div class="console__input">
-                    <p class="console__input_text_pc_tablet">
-                        $ C:\Users\headsmanc0de> Hello World!The matrix has you...
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /Console -->
-    <!-- Features -->
-    <div class="features" id="features">
-        <div class="container__box">
-            <div class="features__item">
-                <img class="features__icon" src="./images/features/feature-1.png" alt="" />
-                <h4 class="features__title">Pixel perfection</h4>
-                <div class="features__text">
-                    Project development in perfect pixel style
-                </div>
-            </div>
-            <div class="features__item">
-                <img class="features__icon" src="./images/features/feature-2.png" alt="" />
-                <h4 class="features__title">Responsive ready</h4>
-                <div class="features__text">
-                    Development site for 2k resolution, laptops and mobile devices
-                </div>
-            </div>
-            <div class="features__item">
-                <img class="features__icon" src="./images/features/feature-4.png" alt="" />
-                <h4 class="features__title">Clean Code</h4>
-                <div class="features__text">
-                    Good adaptable, easy to read code
-                </div>
-            </div>
-            <div class="features__item">
-                <img class="features__icon" src="./images/features/feature-5.png" alt="" />
-                <h4 class="features__title">Order Security</h4>
-                <div class="features__text">
-                    Turnkey order execution
-                </div>
-            </div>
-            <div class="features__item">
-                <img class="features__icon" src="./images/features/feature-6.png" alt="" />
-                <h4 class="features__title">Cloud backup</h4>
-                <div class="features__text">
-                    Backup project on private github
-                </div>
-            </div>
-            <div class="features__item">
-                <img class="features__icon" src="./images/features/feature-3.png" alt="" />
-                <h4 class="features__title">Support</h4>
-                <div class="features__text">
-                    Support for your project
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /Features -->
-    <!-- Portfolio -->
-    <div class="portfolio" id="portfolio">
-        <div class="container">
-            <div class="portfolio__inner">
-                <div class="portfolio__item">
-                    <h5>Minimo</h5>
-                    <img src="./images/portfolio/minimo.jpg" alt="minimo">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /Portfolio -->
-    <!-- Footer -->
-    <footer class="footer" id="footer">
-        <div class="contact__card">
-            <div class="title__card">Social and Contact</div>
-            <div class="footer__card">
-                <a href="https://github.com/headsmanC0de" target="_blank"><img src="./images/github-logo.png" alt="github"></a>
-                <a href="https://t.me/headsmanc0de" target="_blank"><img src="./images/telegram.png" alt="telegram"></a>
-                <a href="https://www.instagram.com/_headsmanc0de/" target="_blank"><img src="./images/instagram-sketched.png" alt="instagram"></a>
-            </div>
-            <div class="copyright">
-                Copyright© 2020.
-                <br> All Rights Reserved.
-                <br> Made by <a href="#">_headsmanc0de</a>
-            </div>
-        </div>
-    </footer>
-    <div class="intro"></div>
-    <!-- /Footer -->
-    <!-- JavaScript -->
-    <script src="./js/app.js"></script>
-</body>
 
+                <div class="logo">
+                        <div class="logo__text"><a href="">>_headsmanc0de</a></div>
+
+                </div>
+
+
+                <nav class="nav">
+                    <a class="nav_link " href="#">Portfolio</a>
+                    <a class="nav_link" href="#">Skills</a>
+                    <a class="nav_link" href="#">About me</a>
+                    <a class="nav_link" href="#">Contact</a>
+                    <a class="nav_link nav_link--btn" href="#">Hire Me</a>
+                </nav>
+            </div>
+            <!-- /End .header__inner -->
+        </div>
+        <!-- /End .container -->
+    </header>
+    <!-- /End .header -->
+
+
+    <!-- Header -->
+    <!-- Begin .intro -->
+    <section class="intro">
+        <!-- Begin .container -->
+        <div class="container">
+            <div class="intro__inner">
+
+                <!-- Begin .intro__content -->
+                <div class="intro__content">
+                    <h2 class="intro__subtitle">Hello World! I'm</h2>
+                    <h1 class="intro__title">Nazariy Petryk</h1>
+                    <div class="intro__text">Junior Front-End Developer</div>
+                    <div class="social">
+                        <a href="https://t.me/headsmanc0de" class="social__link"><img src="./images/telegram.svg" alt="telegram"></a>
+                        <a href="https://www.instagram.com/_headsmanc0de/" class="social__link"><img src="./images/instagram.svg" alt="instagram"></a>
+                        <a href="https://github.com/headsmanC0de" class="social__link"><img src="./images/github.svg" alt="github"></a>
+                        <a href="https://www.linkedin.com/in/headsmanc0de/" class="social__link"><img src="./images/linkedin.svg" alt="linkedin"></a>
+                        
+                    </div>
+                    <a class="btn" href="#">Hire Me</a>
+                    <button class="btn" type="button">See My Resume</button>
+                </div>
+                <!-- /End .intro__content -->
+
+                <!-- Begin .intro__console -->
+                <div class="intro__console">
+                    <div class="statusbar">
+                        <div class="statusbar_btns">
+                            <div class="statusbar_btn statusbar_btn--red"></div>
+                            <div class="statusbar_btn statusbar_btn--yellow"></div>
+                            <div class="statusbar_btn statusbar_btn--green"></div>
+                        </div>
+                        <div class="statusbar__title"><img src="./images/html.svg" alt="ico"> index.html</span>
+                        </div>
+                    </div>
+                    <div class="console_textarea">
+                        <a href="./version 0.1/index.html">Old site version</a>
+                    </div>
+                    <!-- /End .intro__console -->
+                </div>
+            </div>
+        <!-- /End .container -->
+    </section>
+    <!-- /End .intro -->
+</body>
 </html>
