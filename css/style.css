@@ -167,7 +167,7 @@ h1, h2, h3, h4, h5, h6 {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  border-bottom: 1px solid rgba(106, 105, 107, 0.3);
+  border-bottom: 2px solid rgba(106, 105, 107, 0.3);
   padding-top: 10px;
   padding-bottom: 120px;
 }
@@ -366,7 +366,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .console_textarea {
-  padding: 10px;
+  padding: 16px 12px;
 }
 
 .console_textarea a {
@@ -375,4 +375,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .console_textarea a:hover {
   color: #4b48d4;
+}
+
+.console_textarea .html_code {
+  color: #fff;
+  line-height: 12px;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.console_textarea pre {
+  margin: 0;
 }
