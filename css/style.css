@@ -25,7 +25,6 @@ body {
   font-size: 1rem;
   color: #232323;
   background-color: #ffffff;
-  background-image: url(http://www.transparenttextures.com/patterns/shattered.png);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -232,7 +231,6 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
   vertical-align: top;
   padding: 1.05em 1.7em;
-  min-width: 170px;
   border: 1px solid #414141;
   -webkit-border-radius: 2em;
           border-radius: 2em;
@@ -272,6 +270,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: .94rem;
   font-weight: 700;
   border-width: 2px;
+  min-width: 0;
 }
 
 .intro__console {
@@ -649,6 +648,94 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-shadow: 0 2px 25px rgba(0, 0, 0, 0.75);
           box-shadow: 0 2px 25px rgba(0, 0, 0, 0.75);
   cursor: pointer;
+}
+
+.footer {
+  padding: 1rem 0;
+  background-color: #232323;
+}
+
+.footer__inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__copyright {
+  font-size: 1.1rem;
+  margin-right: 1rem;
+  padding-right: 1rem;
+  color: #bbbbcc;
+  padding-right: .8ram;
+  border-right: 1px solid #414141;
+}
+
+.footer__credits {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__social {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__social a {
+  margin-right: 1.2rem;
+  text-decoration: none;
+}
+
+.footer__nav {
+  font-size: 1.2rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__nav-link {
+  margin-left: 1.3rem;
+  color: #BBBBCC;
+  text-decoration: none;
+}
+
+.footer__nav-link:hover {
+  text-decoration: underline;
+}
+
+.footer__nav-link--btn {
+  padding: .5rem 1.4rem;
+  border: 1px solid #8d8d8e;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  line-height: 1.1;
+}
+
+.footer__nav-link--btn:hover {
+  text-decoration: none;
+  background-color: #fff;
+  color: #232323;
 }
 
 .text--center {
