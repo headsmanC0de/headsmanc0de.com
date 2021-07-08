@@ -1214,7 +1214,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1024px) {
   .header,
   .main,
   .footer__container {
