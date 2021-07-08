@@ -1058,6 +1058,9 @@ img {
     order: 1;
     justify-self: center;
   }
+  .services__content {
+    padding: 1.5rem .5rem 1.25rem 1.5rem;
+  }
   .about__container,
   .skills__container,
   .portfolio__content,
@@ -1165,7 +1168,7 @@ img {
     font-size: 2rem;
   }
   .services__content {
-    padding: 2rem 0 2rem 2.5rem;
+    padding: 1,5rem 0 2rem 2.5rem;
   }
   .services__modal-content {
     width: 450px;
@@ -1211,7 +1214,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1080px) {
   .header,
   .main,
   .footer__container {
@@ -1227,8 +1230,7 @@ img {
     font-size: 3rem;
   }
   .services__container {
-    grid-template-columns: repeat(4, 230px);
-    padding-right: 2rem;
+    grid-template-columns: repeat(4, 1fr);
   }
   .portfolio__content {
     column-gap: 5rem;
