@@ -45,7 +45,7 @@ main {
 
 .block-background {
   position: fixed;
-  background: url("assets/images/main-bg.jpg") no-repeat center top;
+  background: url("/WebTask1/assets/images/main-bg.jpg") no-repeat center top;
   top: 0;
   left: 0;
   width: 100%;
@@ -189,7 +189,7 @@ header {
 
 .winners {
   border-radius: 8px;
-  background-image: url("assets/images/winner-bg.jpg");
+  background-image: url("/WebTask1/assets/images/winner-bg.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
