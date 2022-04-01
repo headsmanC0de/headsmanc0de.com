@@ -114,3 +114,68 @@
 	i
 		font-size: 1.25rem
 
+.filters
+	&__content
+		margin: 2rem 0 2.5rem
+		background-color: $--text-color-lighten
+		padding: .375rem
+		border-radius: .75rem
+		display: flex
+		justify-content: space-between
+		column-gap: .5rem
+
+	&__card
+		img
+			max-width: 250px
+
+	&__button
+		width: 100%
+		padding: 1rem
+		color: $--title-color
+		font-size: $--small-font-size
+		font-family: $--body-font
+		font-weight: 500
+		border-radius: .75rem
+		background-color: transparent
+		transition: .3s
+
+		&:hover
+			background-color: $--body-color
+
+.projects
+	&__card
+		position: relative
+		border-radius: 1rem
+		overflow: hidden
+			
+		img
+			width: 100%
+			height: 100%
+
+	&__modal
+		position: absolute
+		width: 100%
+		height: 100%
+		bottom: -100%
+		left: 0
+		background: linear-gradient(180deg,hsla($--hue, 24%, 40%, .3) 0%, hsla($--hue, 24%, 4%, 1) 95%,)
+		display: grid
+		align-items: flex-end
+		padding: 1.5rem 1.25rem
+		transition: .3s
+		
+	&__subtitle, &__title
+		color: $white
+
+	&__subtitle
+		font-size: $--smaller-font-size
+
+	&__title
+		font-size: $--h3-font-size
+		margin-bottom: .75rem
+
+	&__button
+		padding: .5rem
+
+.projects__card:hover .projects__modal
+	bottom: 0

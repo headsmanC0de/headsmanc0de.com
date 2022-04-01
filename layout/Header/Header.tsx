@@ -1,63 +1,13 @@
-import { group } from 'console';
+import { HeaderProps, socialData, profileInfo } from './Header.props';
 import styles from './Header.module.sass';
-import { HeaderProps } from './Header.props';
-
-interface socialData {
-	id: number;
-    social: string;
-    href: string;
-    icon: string;
-}
-
-interface profileInfo {
-	id: number;
-	title: number | string;
-	desctiption: string;
-}
+import cn from 'classnames';
 
 export default function Header({ ...props }: HeaderProps): JSX.Element {
-	const socialData: socialData[] = [
-		{
-			id: 0,
-			social: 'Telegram',
-			href: 'https://t.me/headsmanc0de',
-			icon: 'ri-telegram-line',
-		},
-		{
-			id: 1,
-			social: 'Instagram',
-			href: 'https://www.instagram.com/_headsmanc0de/',
-			icon: 'ri-instagram-line',
-		},
-		{
-			id: 2,
-			social: 'GitHub',
-			href: 'https://github.com/headsmanC0de',
-			icon: 'ri-github-line',
-		},
-	];
-
-	const profileInfo: profileInfo[] = [
-		{
-			id: 0,
-			title: 1,
-			desctiption: 'Year of commercial development',
-		},
-		{
-			id: 1,
-			title: 3,
-			desctiption: 'Completed projects',
-		},
-		{
-			id: 2,
-			title: 'SoftVision',
-			desctiption: 'My current place of employment',
-		},
-	];
+	
 
 	return (
-		<header {...props} className={(styles.profile, styles.container)}>
-			<div className={(styles.profile__container, styles.grid)}>
+		<header {...props} className={cn(styles.profile, styles.container)}>
+			<div className={cn(styles.profile__container, styles.grid)}>
 				<div className={styles.profile__data}>
 					<div className={styles.profile__border}>
 						<div className={styles.profile__perfil}>
@@ -82,13 +32,30 @@ export default function Header({ ...props }: HeaderProps): JSX.Element {
 					</ul>
 				</div>
 
-				<div className={(styles.profile__info, styles.grid)}>
+				<div className={cn(styles.profile__info, styles.grid)}>
 					{profileInfo.map((info) => (
 						<div className={styles.profile__infoGroup} key={info.id}>
 							<h3 className={styles.profile__infoNumber}>{info.title}</h3>
 							<p className={styles.profile__infoDesctiption}>{info.desctiption}</p>
 						</div>
 					))}
+				</div>
+
+				<div className={styles.profile__buttons}>
+					<a href='../../assets/NazariyPetrykCV.pdf' className={styles.button}>
+						Download CV <i className='ri-download-line'></i>
+					</a>
+
+					<div className={styles.profile__buttonsSmall}>
+						<a
+							href='mailto:headsmanc0de@gmail.com'
+							className={cn(styles.button, styles.button__small, styles.button__gray)}
+							target='_blank'
+							rel='noreferrer'
+						>
+							<i className='ri-mail-line'></i>
+						</a>
+					</div>
 				</div>
 			</div>
 		</header>
