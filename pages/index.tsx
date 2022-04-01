@@ -1,11 +1,13 @@
-import type { NextPage } from 'next'
+import type { NextPage } from 'next';
 import 'remixicon/fonts/remixicon.css';
+import Header from '../layout/Header/Header';
 
 const Home: NextPage = () => {
-  return (
+	return (
 		<>
+			<Header/>
 		</>
-  );
-}
+	);	
+};
 
-export default Home
+export default Home;
