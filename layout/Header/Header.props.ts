@@ -50,6 +50,6 @@ export const profileInfo: profileInfo[] = [
 	{
 		id: 2,
 		title: 'SoftVision',
-		desctiption: 'My current job',
+		desctiption: 'My current company',
 	},
 ];

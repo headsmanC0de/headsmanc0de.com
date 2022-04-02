@@ -117,7 +117,7 @@
 .filters
 	&__content
 		margin: 2rem 0 2.5rem
-		background-color: $--text-color-lighten
+		background-color: $--container-color
 		padding: .375rem
 		border-radius: .75rem
 		display: flex
@@ -179,3 +179,44 @@
 
 .projects__card:hover .projects__modal
 	bottom: 0
+
+.skills
+	&__content
+		row-gap: 3.5rem
+
+	&__title
+		font-size: $--h3-font-size
+		text-align: center
+		margin-bottom: 1.5rem
+
+	&__box
+		display: flex
+		justify-content: center
+		column-gap: 3rem
+
+	&__group
+		display: grid
+		align-content: flex-start
+		row-gap: 1rem
+
+	&__data
+		display: flex
+		column-gap: .5rem
+
+		i
+			font-size: 1rem
+			color: $--first-color
+
+	&__name
+		font-size: $--normal-font-size
+		font-weight: 500
+		line-height: 18px
+
+.activeTab
+	display: grid
+
+.disableTab
+	display: none
+
+.activeButton
+	background-color: $--body-color

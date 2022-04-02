@@ -2,7 +2,7 @@ import { DetailedHTMLProps, HTMLAttributes } from 'react';
 
 export type MainProps = DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>;
 
-interface ProjectData {
+interface ProjectDataType {
 	id: number;
 	img: string;
 	imgAlt: string;
@@ -11,7 +11,13 @@ interface ProjectData {
 	projectLink: string;
 }
 
-export const projectData: ProjectData[] = [
+interface SkillsDataType {
+	id: number;
+	skill: string;
+	icon: string;
+}
+
+export const projectData: ProjectDataType[] = [
 	{
 		id: 0,
 		img: '/images/projects/galacticescape.webp',
@@ -19,5 +25,51 @@ export const projectData: ProjectData[] = [
 		title: 'Galactic Escape',
 		subtitle: 'NFT Wax game',
 		projectLink: '#',
+	},
+];
+
+export const skillsDataFrontEnd: SkillsDataType[] = [
+	{
+		id: 0,
+		skill: 'HTML5',
+		icon: 'ri-html5-line',
+	},
+	{
+		id: 1,
+		skill: 'CSS3',
+		icon: 'ri-css3-line',
+	},
+	{
+		id: 2,
+		skill: 'JavaScript',
+		icon: 'ri-braces-line',
+	},
+	{
+		id: 3,
+		skill: 'TypeScript',
+		icon: 'ri-medal-line',
+	},
+	{
+		id: 4,
+		skill: 'React/NextJs',
+		icon: 'ri-reactjs-line',
+	},
+	{
+		id: 5,
+		skill: 'Git',
+		icon: 'ri-git-branch-line',
+	},
+];
+
+export const skillsDataBackEnd: SkillsDataType[] = [
+	{
+		id: 0,
+		skill: 'NodeJs/NestJs',
+		icon: 'ri-server-line',
+	},
+	{
+		id: 1,
+		skill: 'Firebase',
+		icon: 'ri-fire-line',
 	},
 ];

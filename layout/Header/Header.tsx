@@ -3,8 +3,6 @@ import styles from './Header.module.sass';
 import cn from 'classnames';
 
 export default function Header({ ...props }: HeaderProps): JSX.Element {
-	
-
 	return (
 		<header {...props} className={cn(styles.profile, styles.container)}>
 			<div className={cn(styles.profile__container, styles.grid)}>

@@ -3,6 +3,18 @@
 @import _colors.sass
 @import _typography.sass
 
+::-webkit-scrollbar
+	width: 0.6rem
+	border-radius: .5rem
+	background-color: hsl($--hue, 8%, 16%)
+
+::-webkit-scrollbar-thumb
+	border-radius: .5rem
+	background-color: hsl($--hue, 8%, 24%)
+	&:hover
+		background-color: hsl($--hue, 8%, 32%)
+
+
 /* Base Styles */
 *
 	box-sizing: border-box
@@ -14,6 +26,7 @@ body
 	font-size: $--normal-font-size
 	background-color: $--body-color
 	color: $--text-color
+
 
 h1,h2,h3
 	color: $--text-color

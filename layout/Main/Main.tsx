@@ -1,20 +1,45 @@
 import cn from 'classnames';
+import { useState } from 'react';
 import styles from './Main.module.sass';
-import { MainProps, projectData } from './Main.props';
+import { MainProps, projectData, skillsDataBackEnd, skillsDataFrontEnd } from './Main.props';
 
 export default function Main({ ...props }: MainProps): JSX.Element {
+	const [activeTab, setActiveTab] = useState<'projects' | 'skills'>('projects');
+
 	return (
 		<main {...props} className={styles.main}>
 			<section className={cn(styles.filters, styles.container)}>
 				{/* Filters tabs */}
 				<ul className={styles.filters__content}>
-					<button className={styles.filters__button}>Projects</button>
-					<button className={styles.filters__button}>Skills</button>
+					<button
+						className={cn(
+							styles.filters__button,
+							activeTab === 'projects' ? styles.activeButton : styles.noActive
+						)}
+						onClick={() => setActiveTab('projects')}
+					>
+						Projects
+					</button>
+					<button
+						className={cn(
+							styles.filters__button,
+							activeTab === 'skills' ? styles.activeButton : styles.noActive
+						)}
+						onClick={() => setActiveTab('skills')}
+					>
+						Skills
+					</button>
 				</ul>
 
 				<div className={styles.filters__sections}>
 					{/*	Projects */}
-					<div className={cn(styles.projects__content, styles.grid)}>
+					<div
+						className={cn(
+							styles.projects__content,
+							styles.grid,
+							activeTab === 'projects' ? styles.activeTab : styles.disableTab
+						)}
+					>
 						{projectData.map((item) => (
 							<article className={styles.projects__card} key={item.id}>
 								<img src={item.img} alt={item.imgAlt} />
@@ -41,7 +66,54 @@ export default function Main({ ...props }: MainProps): JSX.Element {
 						))}
 					</div>
 					{/*	Skills */}
-					<div className={(styles.skills__content, styles.grid)}></div>
+					<div
+						className={cn(
+							styles.skills__content,
+							styles.grid,
+							activeTab === 'skills' ? styles.activeTab : styles.disableTab
+						)}
+					>
+						{/* Front-end */}
+						<div className={styles.skills__area}>
+							<h3 className={styles.skills__title}>Front-end developer</h3>
+
+							<div className={styles.skills__box}>
+								<div className={styles.skills__group}>
+									{skillsDataFrontEnd.map((item) => (
+										<div className={styles.skills__data} key={item.id}>
+											<i className={item.icon}></i>
+
+											<div>
+												<h3 className={styles.skills__name}>
+													{item.skill}
+												</h3>
+											</div>
+										</div>
+									))}
+								</div>
+							</div>
+						</div>
+						{/* Back-end */}
+						<div className={styles.skills__area}>
+							<h3 className={styles.skills__title}>Back-end developer</h3>
+
+							<div className={styles.skills__box}>
+								<div className={styles.skills__group}>
+									{skillsDataBackEnd.map((item) => (
+										<div className={styles.skills__data} key={item.id}>
+											<i className={item.icon}></i>
+
+											<div>
+												<h3 className={styles.skills__name}>
+													{item.skill}
+												</h3>
+											</div>
+										</div>
+									))}
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
 		</main>
