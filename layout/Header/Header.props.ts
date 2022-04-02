@@ -34,6 +34,12 @@ export const socialData: socialData[] = [
 		href: 'https://github.com/headsmanC0de',
 		icon: 'ri-github-line',
 	},
+	{
+		id: 3,
+		social: 'Linkedin',
+		href: 'https://www.linkedin.com/in/headsmanc0de/	',
+		icon: 'ri-linkedin-line',
+	},
 ];
 
 export const profileInfo: profileInfo[] = [
