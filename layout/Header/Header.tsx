@@ -40,7 +40,7 @@ export default function Header({ ...props }: HeaderProps): JSX.Element {
 				</div>
 
 				<div className={styles.profile__buttons}>
-					<a href='../../assets/NazariyPetrykCV.pdf' className={styles.button}>
+					<a href='../../assets/NazariyPetrykCV.pdf' className={styles.button} download>
 						Download CV <i className='ri-download-line'></i>
 					</a>
 
