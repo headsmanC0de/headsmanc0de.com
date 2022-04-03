@@ -26,6 +26,14 @@ export const projectData: ProjectDataType[] = [
 		subtitle: 'NFT Wax game',
 		projectLink: '#',
 	},
+	{
+		id: 1,
+		img: '/images/projects/ybt.webp',
+		imgAlt: 'Ybt',
+		title: 'Your bunny trades',
+		subtitle: 'Crypto ecosystem',
+		projectLink: 'https://yourbunnytrades.com/',
+	},
 ];
 
 export const skillsDataFrontEnd: SkillsDataType[] = [
