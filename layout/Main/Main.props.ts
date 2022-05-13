@@ -24,7 +24,7 @@ export const projectData: ProjectDataType[] = [
 		imgAlt: 'Galactic Escape',
 		title: 'Galactic Escape',
 		subtitle: 'NFT Wax game',
-		projectLink: '#',
+		projectLink: 'https://www.galacticescape.io/',
 	},
 	{
 		id: 1,
