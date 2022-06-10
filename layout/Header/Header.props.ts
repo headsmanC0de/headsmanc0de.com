@@ -45,7 +45,7 @@ export const socialData: socialData[] = [
 export const profileInfo: profileInfo[] = [
 	{
 		id: 0,
-		title: 1,
+		title: '1+',
 		desctiption: 'Year of commercial development',
 	},
 	{
