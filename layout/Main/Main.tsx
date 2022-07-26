@@ -1,7 +1,14 @@
 import cn from 'classnames';
 import { useState } from 'react';
 import styles from './Main.module.sass';
-import { MainProps, projectData, skillsDataBackEnd, skillsDataFrontEnd } from './Main.props';
+import {
+	MainProps,
+	projectData,
+	skillsDataBackEnd,
+	skillsDataFrontEnd,
+	skillsDataML
+} from './Main.props';
+import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
 
 export default function Main({ ...props }: MainProps): JSX.Element {
 	const [activeTab, setActiveTab] = useState<'projects' | 'skills'>('projects');
@@ -18,7 +25,7 @@ export default function Main({ ...props }: MainProps): JSX.Element {
 						)}
 						onClick={() => setActiveTab('projects')}
 					>
-						Projects
+            Projects
 					</button>
 					<button
 						className={cn(
@@ -27,7 +34,7 @@ export default function Main({ ...props }: MainProps): JSX.Element {
 						)}
 						onClick={() => setActiveTab('skills')}
 					>
-						Skills
+            Skills
 					</button>
 				</ul>
 
@@ -36,8 +43,8 @@ export default function Main({ ...props }: MainProps): JSX.Element {
 					<div
 						className={cn(
 							styles.projects__content,
-							styles.grid,
-							activeTab === 'projects' ? styles.activeTab : styles.disableTab
+							isMobile? styles.grid : styles.flex,
+							activeTab !== 'projects' && styles.disableTab
 						)}
 					>
 						{projectData.map((item) => (
@@ -58,7 +65,7 @@ export default function Main({ ...props }: MainProps): JSX.Element {
 												styles.projects__small
 											)}
 										>
-											<i className='ri-link'></i>
+											<i className="ri-link"></i>
 										</a>
 									</div>
 								</div>
@@ -69,13 +76,13 @@ export default function Main({ ...props }: MainProps): JSX.Element {
 					<div
 						className={cn(
 							styles.skills__content,
-							styles.grid,
-							activeTab === 'skills' ? styles.activeTab : styles.disableTab
+							isMobile? styles.grid : styles.flex,
+							activeTab !== 'skills' && styles.disableTab
 						)}
 					>
 						{/* Front-end */}
 						<div className={styles.skills__area}>
-							<h3 className={styles.skills__title}>Front-end developer</h3>
+							<h3 className={styles.skills__title}>Front-End</h3>
 
 							<div className={styles.skills__box}>
 								<div className={styles.skills__group}>
@@ -84,9 +91,7 @@ export default function Main({ ...props }: MainProps): JSX.Element {
 											<i className={item.icon}></i>
 
 											<div>
-												<h3 className={styles.skills__name}>
-													{item.skill}
-												</h3>
+												<h3 className={styles.skills__name}>{item.skill}</h3>
 											</div>
 										</div>
 									))}
@@ -95,7 +100,7 @@ export default function Main({ ...props }: MainProps): JSX.Element {
 						</div>
 						{/* Back-end */}
 						<div className={styles.skills__area}>
-							<h3 className={styles.skills__title}>Back-end developer</h3>
+							<h3 className={styles.skills__title}>Back-End</h3>
 
 							<div className={styles.skills__box}>
 								<div className={styles.skills__group}>
@@ -104,9 +109,25 @@ export default function Main({ ...props }: MainProps): JSX.Element {
 											<i className={item.icon}></i>
 
 											<div>
-												<h3 className={styles.skills__name}>
-													{item.skill}
-												</h3>
+												<h3 className={styles.skills__name}>{item.skill}</h3>
+											</div>
+										</div>
+									))}
+								</div>
+							</div>
+						</div>
+						{/* Back-end */}
+						<div className={styles.skills__area}>
+							<h3 className={styles.skills__title}>Machine-Learning</h3>
+
+							<div className={styles.skills__box}>
+								<div className={styles.skills__group}>
+									{skillsDataML.map((item) => (
+										<div className={styles.skills__data} key={item.id}>
+											<i className={item.icon}></i>
+
+											<div>
+												<h3 className={styles.skills__name}>{item.skill}</h3>
 											</div>
 										</div>
 									))}

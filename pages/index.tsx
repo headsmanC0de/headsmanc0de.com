@@ -7,7 +7,7 @@ import Footer from '../layout/Footer/Footer';
 
 const Home: NextPage = () => {
 	return (
-		<Page title='_headsmanc0de' description='Full stack developer'>
+		<Page title='Dennis Pavlyuk' description='Full-Stack Developer'>
 			<Header />
 			<Main />
 			<Footer />

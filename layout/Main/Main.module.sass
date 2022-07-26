@@ -183,15 +183,16 @@
 .skills
 	&__content
 		row-gap: 3.5rem
+		justify-content: space-around
 
 	&__title
 		font-size: $--h3-font-size
-		text-align: center
+		text-align: left
 		margin-bottom: 1.5rem
 
 	&__box
 		display: flex
-		justify-content: center
+		justify-content: start
 		column-gap: 3rem
 
 	&__group
@@ -206,6 +207,7 @@
 		i
 			font-size: 1rem
 			color: $--first-color
+			mix-blend-mode: color-burn
 
 	&__name
 		font-size: $--normal-font-size
@@ -213,7 +215,7 @@
 		line-height: 18px
 
 .activeTab
-	display: grid
+	display: inherit
 
 .disableTab
 	display: none

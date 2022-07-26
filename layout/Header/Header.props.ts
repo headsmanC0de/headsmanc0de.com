@@ -19,25 +19,25 @@ export const socialData: socialData[] = [
 	{
 		id: 0,
 		social: 'Telegram',
-		href: 'https://t.me/headsmanc0de',
+		href: 'https://t.me/dpsoccerdude101',
 		icon: 'ri-telegram-line',
 	},
 	{
 		id: 1,
 		social: 'Instagram',
-		href: 'https://www.instagram.com/_headsmanc0de/',
+		href: 'https://www.instagram.com/dennis.pavlyuk/',
 		icon: 'ri-instagram-line',
 	},
 	{
 		id: 2,
 		social: 'GitHub',
-		href: 'https://github.com/headsmanC0de',
+		href: 'https://github.com/dpsoccerdude101',
 		icon: 'ri-github-line',
 	},
 	{
 		id: 3,
 		social: 'Linkedin',
-		href: 'https://www.linkedin.com/in/headsmanc0de/	',
+		href: 'https://www.linkedin.com/in/dennis-pavlyuk-54b83610b/	',
 		icon: 'ri-linkedin-line',
 	},
 ];
@@ -45,8 +45,8 @@ export const socialData: socialData[] = [
 export const profileInfo: profileInfo[] = [
 	{
 		id: 0,
-		title: '1+',
-		desctiption: 'Year of commercial development',
+		title: '2+',
+		desctiption: 'Years of commercial development',
 	},
 	{
 		id: 1,
@@ -55,7 +55,7 @@ export const profileInfo: profileInfo[] = [
 	},
 	{
 		id: 2,
-		title: 'SoftVision',
+		title: 'MicCheck',
 		desctiption: 'My current company',
 	},
 ];

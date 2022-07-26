@@ -20,19 +20,19 @@ interface SkillsDataType {
 export const projectData: ProjectDataType[] = [
 	{
 		id: 0,
-		img: '/images/projects/galacticescape.webp',
-		imgAlt: 'Galactic Escape',
-		title: 'Galactic Escape',
-		subtitle: 'NFT Wax game',
-		projectLink: 'https://www.galacticescape.io/',
+		img: '/images/projects/miccheck.webp',
+		imgAlt: 'MicCheck App',
+		title: 'MicCheck App',
+		subtitle: 'Social Media & Ticketing for Music Venues',
+		projectLink: 'https://www.themiccheck.com/',
 	},
 	{
 		id: 1,
-		img: '/images/projects/ybt.webp',
-		imgAlt: 'Ybt',
-		title: 'Your bunny trades',
-		subtitle: 'Crypto ecosystem',
-		projectLink: 'https://yourbunnytrades.com/',
+		img: '/images/projects/kalyna.webp',
+		imgAlt: 'Registration Form',
+		title: 'Kalyna-UAFGR',
+		subtitle: 'Registration Application for Dancers',
+		projectLink: 'https://www.uafgr.org/registration-form/',
 	},
 ];
 
@@ -59,7 +59,7 @@ export const skillsDataFrontEnd: SkillsDataType[] = [
 	},
 	{
 		id: 4,
-		skill: 'React/NextJs',
+		skill: 'React/NextJS',
 		icon: 'ri-reactjs-line',
 	},
 	{
@@ -67,17 +67,50 @@ export const skillsDataFrontEnd: SkillsDataType[] = [
 		skill: 'Git',
 		icon: 'ri-git-branch-line',
 	},
+	{
+		id: 6,
+		skill: 'Web Components',
+		icon: 'ri-focus-line',
+	},
 ];
 
 export const skillsDataBackEnd: SkillsDataType[] = [
 	{
 		id: 0,
-		skill: 'NodeJs/NestJs',
+		skill: 'NodeJS/NestJS',
 		icon: 'ri-server-line',
 	},
 	{
 		id: 1,
 		skill: 'Firebase',
 		icon: 'ri-fire-line',
+	},
+	{
+		id: 2,
+		skill: 'NoSQL',
+		icon: 'ri-database-line',
+	},
+];
+
+export const skillsDataML: SkillsDataType[] = [
+	{
+		id: 0,
+		skill: 'Python',
+		icon: 'ri-code-line',
+	},
+	{
+		id: 1,
+		skill: 'Yolov5',
+		icon: 'ri-eye-line',
+	},
+	{
+		id: 2,
+		skill: 'NVIDIA cuDDN',
+		icon: 'ri-lightbulb-line',
+	},
+	{
+		id: 3,
+		skill: 'Google Colab',
+		icon: 'ri-google-line',
 	},
 ];

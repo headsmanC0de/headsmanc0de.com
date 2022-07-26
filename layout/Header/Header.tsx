@@ -12,7 +12,7 @@ export default function Header({ ...props }: HeaderProps): JSX.Element {
 							<img src='./images/avatar.webp' alt='' />
 						</div>
 					</div>
-					<h2 className={styles.profile__name}>Nazariy Petryk</h2>
+					<h2 className={styles.profile__name}>Dennis Pavlyuk</h2>
 					<h3 className={styles.profession}>ReactJS Developer</h3>
 
 					<ul className={styles.profile__social}>
@@ -41,7 +41,7 @@ export default function Header({ ...props }: HeaderProps): JSX.Element {
 
 				<div className={styles.profile__buttons}>
 					<a
-						href='/files/NazariyPetrykCV.pdf'
+						href='/files/DennisPavlyukResume (3).pdf'
 						className={styles.button}
 						target='_blank'
 						rel='noopener noreferrer'
@@ -51,7 +51,7 @@ export default function Header({ ...props }: HeaderProps): JSX.Element {
 
 					<div className={styles.profile__buttonsSmall}>
 						<a
-							href='mailto:headsmanc0de@gmail.com'
+							href='mailto:me@dennispavlyuk.com'
 							className={cn(styles.button, styles.button__small, styles.button__gray)}
 							target='_blank'
 							rel='noreferrer'

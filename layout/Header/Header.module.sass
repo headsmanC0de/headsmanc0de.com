@@ -98,6 +98,7 @@
 	border-radius: .5rem
 	transition: .3s
 	box-shadow: 0 8px 24px hsla($--hue,$--sat,$--lig, .25)
+	mix-blend-mode: luminosity
 
 	&:hover
 		background-color: $--first-color-alt
@@ -110,7 +111,7 @@
 		background-color: $--container-color
 		color: $--title-color
 		&:hover
-			background-color: hsl($--hue, 24%, 16%)
+			background-color: $--container-color-alt
 
 	i
 		font-size: 1.25rem
