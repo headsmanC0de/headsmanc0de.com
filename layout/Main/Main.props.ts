@@ -20,6 +20,14 @@ interface SkillsDataType {
 export const projectData: ProjectDataType[] = [
 	{
 		id: 0,
+		img: '/images/projects/miccheck.webp',
+		imgAlt: 'MicCheck App',
+		title: 'MicCheck App',
+		subtitle: 'Social Media & Ticketing for Music Venues',
+		projectLink: 'https://www.themiccheck.com/',
+	},
+	{
+		id: 1,
 		img: '/images/projects/galacticescape.webp',
 		imgAlt: 'Galactic Escape',
 		title: 'Galactic Escape',
@@ -27,7 +35,7 @@ export const projectData: ProjectDataType[] = [
 		projectLink: 'https://www.galacticescape.io/',
 	},
 	{
-		id: 1,
+		id: 2,
 		img: '/images/projects/ybt.webp',
 		imgAlt: 'Ybt',
 		title: 'Your bunny trades',
