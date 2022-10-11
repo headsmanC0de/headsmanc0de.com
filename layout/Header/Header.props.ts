@@ -46,7 +46,7 @@ export const profileInfo: profileInfo[] = [
 	{
 		id: 0,
 		title: '2+',
-		desctiption: 'Year of commercial development',
+		desctiption: 'Years of commercial development',
 	},
 	{
 		id: 1,
