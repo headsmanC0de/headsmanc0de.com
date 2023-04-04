@@ -37,7 +37,7 @@ export const socialData: socialData[] = [
 	{
 		id: 3,
 		social: 'Linkedin',
-		href: 'https://www.linkedin.com/in/headsmanc0de/	',
+		href: 'https://www.linkedin.com/in/headsmanc0de/',
 		icon: 'ri-linkedin-line',
 	},
 ];
