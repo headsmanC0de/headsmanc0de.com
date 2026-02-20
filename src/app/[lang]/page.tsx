@@ -40,9 +40,9 @@ export default async function HomePage({ params }: PageProps) {
 				<Separator className="my-6 print:my-4" />
 				<SkillsSection dict={dict.skills} />
 				<Separator className="my-6 print:my-4" />
-				<ExperienceSection dict={dict.experience} lang={locale} />
+				<ExperienceSection dict={dict.experience} />
 				<Separator className="my-6 print:my-4" />
-				<EducationSection dict={dict.education} lang={locale} />
+				<EducationSection dict={dict.education} />
 				<Separator className="my-6 print:my-4" />
 				<ContactsSection dict={dict.contacts} />
 			</div>

@@ -15,7 +15,7 @@ export function HeroSection({ dict }: HeroSectionProps) {
 	return (
 		<section className="flex flex-col items-center gap-4 py-8 text-center print:py-4">
 			<Avatar className="size-24 print:size-20">
-				<AvatarImage src="/avatar.webp" alt={dict.name} />
+				<AvatarImage src="/avatar.jpg" alt={dict.name} />
 				<AvatarFallback className="text-2xl print:text-xl">
 					{dict.name
 						.split(" ")

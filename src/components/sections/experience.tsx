@@ -1,5 +1,3 @@
-import type { Locale } from "@/lib/dictionaries";
-
 interface ExperienceItem {
 	company: string;
 	position: string;
@@ -15,7 +13,6 @@ interface ExperienceDict {
 
 interface ExperienceSectionProps {
 	dict: ExperienceDict;
-	lang: Locale;
 }
 
 export function ExperienceSection({ dict }: ExperienceSectionProps) {

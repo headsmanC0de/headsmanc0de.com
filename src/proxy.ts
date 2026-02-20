@@ -14,10 +14,20 @@ function getLocaleFromRequest(request: NextRequest): Locale {
 		negotiatorHeaders[key] = value;
 	});
 
+	// Get languages from Accept-Language header, fallback to empty array
 	const languages = new Negotiator({ headers: negotiatorHeaders }).languages();
-	const locale = matchLocale(languages, locales, defaultLocale);
 
-	return locale as Locale;
+	// If no valid languages, return default
+	if (!languages || languages.length === 0 || languages[0] === "*") {
+		return defaultLocale;
+	}
+
+	try {
+		const locale = matchLocale(languages, locales, defaultLocale);
+		return locale as Locale;
+	} catch {
+		return defaultLocale;
+	}
 }
 
 export function proxy(request: NextRequest) {

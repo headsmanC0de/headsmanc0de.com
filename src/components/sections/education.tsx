@@ -1,5 +1,3 @@
-import type { Locale } from "@/lib/dictionaries";
-
 interface EducationItem {
 	institution: string;
 	degree: string;
@@ -13,7 +11,6 @@ interface EducationDict {
 
 interface EducationSectionProps {
 	dict: EducationDict;
-	lang: Locale;
 }
 
 export function EducationSection({ dict }: EducationSectionProps) {
