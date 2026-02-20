@@ -1,0 +1,143 @@
+{
+	"nav": {
+		"about": "Про мене",
+		"skills": "Навички",
+		"experience": "Досвід",
+		"education": "Освіта",
+		"contacts": "Контакти"
+	},
+	"hero": {
+		"greeting": "Привіт, я",
+		"name": "Назарій Петрик",
+		"title": "Full Stack Developer | Architecture-Focused | AI-Enabled Systems",
+		"subtitle": "Тернопіль, Україна | Тільки Remote"
+	},
+	"about": {
+		"title": "Професійний профіль",
+		"description": "Full Stack Developer з 4+ роками досвіду. Спеціалізація — архітектура сучасних веб-застосунків з акцентом на cross-platform рішення (Web + Desktop + Mobile) та AI-інтеграції. Експерт у побудові zero-framework backend-систем (Pure Bun HTTP) та monorepo-архітектурі (Turborepo). Досвід роботи з Local LLM, MCP (Model Context Protocol) та автоматизацією workflow (n8n)."
+	},
+	"skills": {
+		"title": "Технічний стек",
+		"technical": "Технічні навички",
+		"soft": "Ключові компетенції",
+		"items": {
+			"technical": [
+				"TypeScript",
+				"Bun",
+				"Next.js 16",
+				"React 19",
+				"Tailwind CSS 4",
+				"Tauri 2",
+				"Expo 54",
+				"PostgreSQL",
+				"Drizzle ORM",
+				"Valkey/Redis",
+				"Local LLM",
+				"Ollama",
+				"LM Studio",
+				"n8n",
+				"MCP",
+				"OpenCode",
+				"OpenAgentControl",
+				"Crush",
+				"Docker",
+				"Turborepo",
+				"Proxmox",
+				"Ubuntu/Arch",
+				"Zsh"
+			],
+			"soft": [
+				"Domain-Driven Design",
+				"Monorepo Architecture",
+				"Cross-Platform Development",
+				"AI/Automation",
+				"Zero-Framework Backend",
+				"ReBAC Authorization",
+				"Team Leadership"
+			]
+		}
+	},
+	"experience": {
+		"title": "Досвід роботи",
+		"present": "Теперішній час",
+		"items": [
+			{
+				"company": "Moonrock",
+				"position": "Software Engineer / Architect",
+				"period": "Липень 2024 - Теперішній час",
+				"description": "Архітектура Forge — Cross-Platform SaaS Platform (AI/Automation Domain). Zero-framework backend на Bun, cross-platform екосистема (Web + Desktop + Mobile), AI-інтеграції з Local LLM + n8n + MCP, real-time синхронізація з ElectricSQL, Zero Trust Architecture з ReBAC."
+			},
+			{
+				"company": "Pilzi",
+				"position": "Software Developer (NestJS)",
+				"period": "Вересень 2025 - Грудень 2025",
+				"description": "Розробка backend-мікросервісів на NestJS + Prisma + PostgreSQL. Імплементація AI-автоматизацій з Azure OpenAI + Custom MCP. Побудова workflow-оркестрації для enterprise-клієнтів."
+			},
+			{
+				"company": "Extrawest",
+				"position": "Middle Full Stack Developer",
+				"period": "Серпень 2022 - Квітень 2023",
+				"description": "Розробка full-stack застосунків для управління зарядними станціями EV. Інтеграція з IoT-пристроями через WebSocket та REST API. Real-time моніторинг та аналітика енергоспоживання."
+			},
+			{
+				"company": "Softvision",
+				"position": "Middle ReactJS Developer / Team Lead",
+				"period": "Вересень 2021 - Липень 2022",
+				"description": "Розробка комерційного React-застосунку для агрегації продуктів. Team Lead команди з 4 розробників під час розробки NFT-гри. Web3 інтеграції з Wax Blockchain."
+			},
+			{
+				"company": "SoftServe",
+				"position": "Front-End Intern",
+				"period": "Серпень 2021 - Вересень 2021",
+				"description": "Розробка UI-компонентів на React. Вивчення enterprise-процесів розробки."
+			}
+		]
+	},
+	"education": {
+		"title": "Освіта та Сертифікації",
+		"items": [
+			{
+				"institution": "Сертифікації",
+				"degree": "React + Next.js, TypeScript, Node.js Architecture",
+				"period": "Постійно"
+			},
+			{
+				"institution": "Мови",
+				"degree": "Українська (рідна), Англійська (B2 - технічна)",
+				"period": ""
+			}
+		]
+	},
+	"contacts": {
+		"title": "Контакти",
+		"email": "Електронна пошта",
+		"phone": "Телефон",
+		"location": "Локація",
+		"items": [
+			{
+				"type": "email",
+				"value": "headsmanc0de@gmail.com"
+			},
+			{
+				"type": "location",
+				"value": "Тернопіль, Україна (Тільки Remote)"
+			},
+			{
+				"type": "telegram",
+				"value": "@headsmanc0de"
+			},
+			{
+				"type": "linkedin",
+				"value": "linkedin.com/in/headsmanc0de"
+			},
+			{
+				"type": "github",
+				"value": "github.com/headsmanc0de"
+			},
+			{
+				"type": "website",
+				"value": "headsmanc0de.com"
+			}
+		]
+	}
+}
