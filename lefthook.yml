@@ -1,0 +1,37 @@
+# Lefthook configuration
+# https://github.com/evilmartians/lefthook
+
+pre-commit:
+  parallel: true
+  jobs:
+    - name: biome check
+      run: npx biome check --write --no-errors-on-unmatched {staged_files}
+      glob:
+        - "*.{js,ts,tsx,json}"
+      stage_fixed: true
+
+    - name: typecheck
+      run: npx tsc --noEmit
+      glob:
+        - "*.{ts,tsx}"
+
+commit-msg:
+  jobs:
+    - name: commitlint
+      run: |
+        msg=$(head -n1 {1})
+        if ! echo "$msg" | grep -qE "^(feat|fix|docs|style|refactor|perf|test|build|ci|chore|revert)(\(.+\))?: .{1,}"; then
+          echo "Invalid commit message format!"
+          echo "Format: type(scope): description"
+          echo "Types: feat, fix, docs, style, refactor, perf, test, build, ci, chore, revert"
+          exit 1
+        fi
+
+pre-push:
+  parallel: true
+  jobs:
+    - name: build check
+      run: npm run build
+
+    - name: tests
+      run: npm run test --if-present
