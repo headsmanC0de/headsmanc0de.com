@@ -9,7 +9,7 @@
 	"hero": {
 		"greeting": "Hi, I'm",
 		"name": "Nazar Petryk",
-		"title": "Full Stack Developer | Architecture-Focused | AI-Enabled Systems",
+		"title": "Full Stack Developer | TypeScript & Rust | AI-Enabled Systems",
 		"subtitle": "Ternopil, Ukraine | Remote Only"
 	},
 	"about": {
@@ -23,6 +23,7 @@
 		"items": {
 			"technical": [
 				"TypeScript",
+				"Rust",
 				"Bun",
 				"Next.js 16",
 				"React 19",
