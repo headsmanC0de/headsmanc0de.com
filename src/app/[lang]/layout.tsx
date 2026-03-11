@@ -15,8 +15,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+	metadataBase: new URL("https://headsmanc0de.com"),
 	title: "Resume | CV",
 	description: "Professional resume and portfolio",
+	alternates: {
+		canonical: "https://headsmanc0de.com",
+	},
 };
 
 export function generateStaticParams() {
