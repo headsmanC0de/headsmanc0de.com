@@ -9,54 +9,130 @@
 	"hero": {
 		"greeting": "Привіт, я",
 		"name": "Назарій Петрик",
-		"title": "Full Stack Developer | TypeScript & Rust | AI-Enabled Systems",
-		"subtitle": "Тернопіль, Україна | Тільки Remote"
+		"title": "Full-Stack Software Engineer / Architect",
+		"subtitle": "TypeScript-first системи · Web, backend і cross-platform · Тернопіль, Україна",
+		"experienceLabel": "професійної розробки програмного забезпечення",
+		"sinceLabel": "Розраховано від серпня 2021"
 	},
 	"about": {
 		"title": "Професійний профіль",
-		"description": "Full Stack Developer з 4+ роками досвіду. Спеціалізація — архітектура сучасних веб-застосунків з акцентом на cross-platform рішення (Web + Desktop + Mobile) та AI-інтеграції. Експерт у побудові zero-framework backend-систем (Pure Bun HTTP) та monorepo-архітектурі (Turborepo). Досвід роботи з Local LLM, MCP (Model Context Protocol) та автоматизацією workflow (n8n)."
+		"description": "Створюю production web- і cross-platform системи від архітектури до деплою та експлуатації. Моя основа — TypeScript: Next.js і React застосунки, backend на Bun і Node.js, PostgreSQL та monorepo на Turborepo. Також проєктую AI-enabled workflow з MCP, локальними LLM і n8n та практично використовую Codex, Claude Code, OpenCode, Gemini CLI і Crush у розробці. Приділяю увагу підтримуваним доменним моделям, безпеці та вимірюваним продуктовим результатам."
 	},
 	"skills": {
 		"title": "Технічний стек",
-		"technical": "Технічні навички",
-		"soft": "Ключові компетенції",
-		"items": {
-			"technical": [
-				"TypeScript",
-				"Rust",
-				"Bun",
-				"Next.js 16",
-				"React 19",
-				"Tailwind CSS 4",
-				"Tauri 2",
-				"Expo 54",
-				"PostgreSQL",
-				"Drizzle ORM",
-				"Valkey/Redis",
-				"Local LLM",
-				"Ollama",
-				"LM Studio",
-				"n8n",
-				"MCP",
-				"OpenCode",
-				"OpenAgentControl",
-				"Crush",
-				"Docker",
-				"Turborepo",
-				"Proxmox",
-				"Ubuntu/Arch",
-				"Zsh"
-			],
-			"soft": [
-				"Domain-Driven Design",
-				"Monorepo Architecture",
-				"Cross-Platform Development",
-				"AI/Automation",
-				"Zero-Framework Backend",
-				"ReBAC Authorization",
-				"Team Leadership"
-			]
-		}
+		"groups": [
+			{
+				"title": "Frontend та UI",
+				"items": [
+					"TypeScript",
+					"JavaScript",
+					"React",
+					"Next.js",
+					"Tailwind CSS",
+					"Radix UI / shadcn",
+					"Zustand",
+					"Redux Toolkit",
+					"Material UI",
+					"SCSS"
+				]
+			},
+			{
+				"title": "Backend та Data",
+				"items": [
+					"Bun",
+					"Node.js",
+					"NestJS",
+					"Hono",
+					"ElysiaJS",
+					"PostgreSQL",
+					"Drizzle ORM",
+					"Prisma",
+					"Valkey / Redis",
+					"RabbitMQ",
+					"REST API",
+					"WebSocket",
+					"Zod"
+				]
+			},
+			{
+				"title": "Cross-platform та Delivery",
+				"items": [
+					"Tauri",
+					"Rust",
+					"Expo / React Native",
+					"Docker",
+					"Turborepo",
+					"Playwright",
+					"Vitest",
+					"Proxmox",
+					"Nginx",
+					"Prometheus",
+					"Grafana",
+					"OpenTelemetry",
+					"PostHog"
+				]
+			},
+			{
+				"title": "AI-агенти та автоматизація",
+				"items": [
+					"MCP",
+					"n8n",
+					"Azure OpenAI",
+					"Локальні LLM",
+					"Ollama / LM Studio",
+					"Codex",
+					"Claude Code",
+					"OpenCode",
+					"Gemini CLI",
+					"Crush"
+				]
+			},
+			{
+				"title": "Продуктові інтеграції",
+				"items": ["Auth.js", "ReBAC", "Resend", "Grammy", "Web3 / WAX Blockchain"]
+			},
+			{
+				"title": "Архітектура та лідерство",
+				"kind": "competency",
+				"items": [
+					"System Architecture",
+					"Domain-Driven Design",
+					"Cross-Platform Development",
+					"AI Integrations",
+					"Security & Authorization",
+					"DevOps & Delivery",
+					"Team Leadership"
+				]
+			}
+		]
+	},
+	"projects": {
+		"title": "Обрані production-проєкти",
+		"intro": "Публічні продукти, які я допоміг довести від архітектури до production.",
+		"visit": "Відкрити проєкт",
+		"items": [
+			{
+				"name": "Moonrock Software",
+				"url": "https://moonrock.software/en",
+				"type": "Сайт компанії · live",
+				"description": "Публічна продуктова екосистема та клієнтська платформа Moonrock: Forge infrastructure, Neo AI layer, commerce-продукти, roadmap та інженерні можливості.",
+				"stack": ["Next.js", "TypeScript", "Bun", "Turborepo"]
+			},
+			{
+				"name": "OnlyDeck",
+				"url": "https://www.onlydeck.shop",
+				"type": "E-commerce платформа",
+				"description": "Production storefront та операційна платформа для української Steam Deck спільноти: каталог, checkout, оплати, доставка й післяпродажні процеси.",
+				"stack": ["Next.js", "Bun", "PostgreSQL", "Turborepo"]
+			},
+			{
+				"name": "Grant Navigator",
+				"url": "https://yankovskayana.com",
+				"type": "Розгорнуто · тестується",
+				"description": "Двомовна lead-generation платформа для грантового консалтингу зі структурованим шляхом послуг, кейсами та conversion-focused контактними сценаріями. Розгорнута й зараз проходить production-тестування.",
+				"stack": ["Next.js", "TypeScript", "PostgreSQL", "Docker"]
+			}
+		]
 	},
 	"experience": {
 		"title": "Досвід роботи",
@@ -66,7 +142,7 @@
 				"company": "Moonrock",
 				"position": "Software Engineer / Architect",
 				"period": "Липень 2024 - Теперішній час",
-				"description": "Архітектура Forge — Cross-Platform SaaS Platform (AI/Automation Domain). Zero-framework backend на Bun, cross-platform екосистема (Web + Desktop + Mobile), AI-інтеграції з Local LLM + n8n + MCP, real-time синхронізація з ElectricSQL, Zero Trust Architecture з ReBAC."
+				"description": "Архітектура TypeScript-first web- і cross-platform продуктів. Backend на Bun і Node.js, Next.js застосунки, PostgreSQL, спільні monorepo-пакети, AI workflow з MCP і n8n та production delivery infrastructure. Розгорнув Grant Navigator на yankovskayana.com і зараз тестую його в production."
 			},
 			{
 				"company": "Pilzi",

@@ -16,8 +16,9 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
 	metadataBase: new URL("https://headsmanc0de.com"),
-	title: "Resume | CV",
-	description: "Professional resume and portfolio",
+	title: "Nazar Petryk — Full-Stack Software Engineer / Architect",
+	description:
+		"Portfolio and experience of Nazar Petryk, a TypeScript-focused full-stack software engineer and architect.",
 	alternates: {
 		canonical: "https://headsmanc0de.com",
 	},
