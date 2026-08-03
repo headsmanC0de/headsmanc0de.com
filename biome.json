@@ -7,7 +7,18 @@
 	},
 	"files": {
 		"ignoreUnknown": false,
-		"includes": ["src/**", "app/**", "*.ts", "*.tsx", "*.json"]
+		"includes": [
+			"src/**",
+			"app/**",
+			"*.ts",
+			"*.tsx",
+			"*.json",
+			"!!**/node_modules",
+			"!!**/.next",
+			"!!**/dist",
+			"!!**/build",
+			"!!**/coverage"
+		]
 	},
 	"formatter": {
 		"enabled": true,

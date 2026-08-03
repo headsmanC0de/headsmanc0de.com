@@ -1,0 +1,8 @@
+{
+  "repo_type": "unknown",
+  "entrypoints": [
+    "README.md",
+    "docs/_index/matrix-dashboard.md",
+    "docs/_index/entrypoints.md"
+  ]
+}

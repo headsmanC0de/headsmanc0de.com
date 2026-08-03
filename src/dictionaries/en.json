@@ -9,54 +9,130 @@
 	"hero": {
 		"greeting": "Hi, I'm",
 		"name": "Nazar Petryk",
-		"title": "Full Stack Developer | TypeScript & Rust | AI-Enabled Systems",
-		"subtitle": "Ternopil, Ukraine | Remote Only"
+		"title": "Full-Stack Software Engineer / Architect",
+		"subtitle": "TypeScript-first systems · Web, backend and cross-platform · Ternopil, Ukraine",
+		"experienceLabel": "of professional software engineering",
+		"sinceLabel": "Calculated from Aug 2021"
 	},
 	"about": {
 		"title": "Professional Profile",
-		"description": "Full Stack Developer with 4+ years of experience. Specialization in modern web application architecture with focus on cross-platform solutions (Web + Desktop + Mobile) and AI integrations. Expert in building zero-framework backend systems (Pure Bun HTTP) and monorepo architecture (Turborepo). Experience with Local LLM, MCP (Model Context Protocol), and workflow automation (n8n)."
+		"description": "I build production web and cross-platform systems from architecture through deployment and operations. My core is TypeScript: Next.js and React applications, Bun and Node.js backends, PostgreSQL data layers, and Turborepo monorepos. I also design AI-enabled workflows with MCP, local LLMs and n8n, using Codex, Claude Code, OpenCode, Gemini CLI and Crush in hands-on development. I focus on maintainable domain models, security and measurable product outcomes."
 	},
 	"skills": {
 		"title": "Technical Stack",
-		"technical": "Technical Skills",
-		"soft": "Core Competencies",
-		"items": {
-			"technical": [
-				"TypeScript",
-				"Rust",
-				"Bun",
-				"Next.js 16",
-				"React 19",
-				"Tailwind CSS 4",
-				"Tauri 2",
-				"Expo 54",
-				"PostgreSQL",
-				"Drizzle ORM",
-				"Valkey/Redis",
-				"Local LLM",
-				"Ollama",
-				"LM Studio",
-				"n8n",
-				"MCP",
-				"OpenCode",
-				"OpenAgentControl",
-				"Crush",
-				"Docker",
-				"Turborepo",
-				"Proxmox",
-				"Ubuntu/Arch",
-				"Zsh"
-			],
-			"soft": [
-				"Domain-Driven Design",
-				"Monorepo Architecture",
-				"Cross-Platform Development",
-				"AI/Automation",
-				"Zero-Framework Backend",
-				"ReBAC Authorization",
-				"Team Leadership"
-			]
-		}
+		"groups": [
+			{
+				"title": "Frontend & UI",
+				"items": [
+					"TypeScript",
+					"JavaScript",
+					"React",
+					"Next.js",
+					"Tailwind CSS",
+					"Radix UI / shadcn",
+					"Zustand",
+					"Redux Toolkit",
+					"Material UI",
+					"SCSS"
+				]
+			},
+			{
+				"title": "Backend & Data",
+				"items": [
+					"Bun",
+					"Node.js",
+					"NestJS",
+					"Hono",
+					"ElysiaJS",
+					"PostgreSQL",
+					"Drizzle ORM",
+					"Prisma",
+					"Valkey / Redis",
+					"RabbitMQ",
+					"REST API",
+					"WebSocket",
+					"Zod"
+				]
+			},
+			{
+				"title": "Cross-platform & Delivery",
+				"items": [
+					"Tauri",
+					"Rust",
+					"Expo / React Native",
+					"Docker",
+					"Turborepo",
+					"Playwright",
+					"Vitest",
+					"Proxmox",
+					"Nginx",
+					"Prometheus",
+					"Grafana",
+					"OpenTelemetry",
+					"PostHog"
+				]
+			},
+			{
+				"title": "AI Agents & Automation",
+				"items": [
+					"MCP",
+					"n8n",
+					"Azure OpenAI",
+					"Local LLMs",
+					"Ollama / LM Studio",
+					"Codex",
+					"Claude Code",
+					"OpenCode",
+					"Gemini CLI",
+					"Crush"
+				]
+			},
+			{
+				"title": "Product Integrations",
+				"items": ["Auth.js", "ReBAC", "Resend", "Grammy", "Web3 / WAX Blockchain"]
+			},
+			{
+				"title": "Architecture & Leadership",
+				"kind": "competency",
+				"items": [
+					"System Architecture",
+					"Domain-Driven Design",
+					"Cross-Platform Development",
+					"AI Integrations",
+					"Security & Authorization",
+					"DevOps & Delivery",
+					"Team Leadership"
+				]
+			}
+		]
+	},
+	"projects": {
+		"title": "Selected Production Work",
+		"intro": "Public products I helped take from architecture to a live deployment.",
+		"visit": "Open live project",
+		"items": [
+			{
+				"name": "Moonrock Software",
+				"url": "https://moonrock.software/en",
+				"type": "Company platform · live",
+				"description": "Moonrock's public product ecosystem and client platform, presenting its Forge infrastructure, Neo AI layer, commerce products, roadmap and engineering capabilities.",
+				"stack": ["Next.js", "TypeScript", "Bun", "Turborepo"]
+			},
+			{
+				"name": "OnlyDeck",
+				"url": "https://www.onlydeck.shop",
+				"type": "E-commerce platform",
+				"description": "A production storefront and operations platform for Ukraine's Steam Deck community, covering catalog, checkout, payments, delivery and after-sales workflows.",
+				"stack": ["Next.js", "Bun", "PostgreSQL", "Turborepo"]
+			},
+			{
+				"name": "Grant Navigator",
+				"url": "https://yankovskayana.com",
+				"type": "Deployed · currently testing",
+				"description": "A bilingual lead-generation and grant consulting platform with structured service journeys, case studies and conversion-focused contact flows. Deployed and currently under production testing.",
+				"stack": ["Next.js", "TypeScript", "PostgreSQL", "Docker"]
+			}
+		]
 	},
 	"experience": {
 		"title": "Experience",
@@ -66,7 +142,7 @@
 				"company": "Moonrock",
 				"position": "Software Engineer / Architect",
 				"period": "July 2024 - Present",
-				"description": "Architecting Forge - Cross-Platform SaaS Platform (AI/Automation Domain). Built zero-framework backend on Bun, cross-platform ecosystem (Web + Desktop + Mobile), AI integrations with Local LLM + n8n + MCP, real-time sync with ElectricSQL, Zero Trust Architecture with ReBAC."
+				"description": "Architecting TypeScript-first web and cross-platform products. Built Bun and Node.js backends, Next.js applications, PostgreSQL data layers, shared monorepo packages, AI workflows with MCP and n8n, and production delivery infrastructure. Deployed Grant Navigator at yankovskayana.com and currently testing it in production."
 			},
 			{
 				"company": "Pilzi",
