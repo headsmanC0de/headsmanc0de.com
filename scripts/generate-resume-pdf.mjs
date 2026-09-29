@@ -52,6 +52,16 @@ try {
 				nextjs-portal{display:none!important}
 				*{transition:none!important;animation:none!important}
 				[data-slot="card"]{break-inside:avoid}
+				body{zoom:.84}
+				py-10,.py-10{padding-top:.4rem!important;padding-bottom:.4rem!important}
+				h1{font-size:2.6rem!important;line-height:1!important}
+				section h2{font-size:1.05rem!important;margin-bottom:.4rem!important}
+				.my-6{margin-top:.8rem!important;margin-bottom:.8rem!important}
+				space-y-5,.space-y-5>*,.space-y-6>*,.space-y-4>*,.space-y-3>*,.space-y-2>*{margin-top:.45rem!important}
+				p{line-height:1.4!important;margin:0!important}
+				.gap-6{gap:.8rem!important}
+				.gap-2{gap:.35rem!important}
+				.min-h-screen{min-height:0!important}
 				.space-y-6>div,.space-y-4>div{break-inside:avoid}
 				.flex.flex-wrap{break-inside:avoid}
 				h2,h3{break-after:avoid}
@@ -63,8 +73,9 @@ try {
 		await page.pdf({
 			path: new URL(file, OUT_DIR).pathname,
 			format: "A4",
+			scale: 0.85,
 			printBackground: true,
-			margin: { top: "8mm", bottom: "8mm", left: "6mm", right: "6mm" },
+			margin: { top: "6mm", bottom: "6mm", left: "5mm", right: "5mm" },
 		});
 		await context.close();
 		console.log(`✓ ${file} (${theme})`);
