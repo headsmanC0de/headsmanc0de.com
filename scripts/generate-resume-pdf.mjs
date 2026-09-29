@@ -34,10 +34,29 @@ try {
 		const page = await context.newPage();
 		await page.goto(`${BASE_URL}/en`, { waitUntil: "networkidle" });
 		await page.evaluate(() => document.fonts.ready);
-		// hide interactive controls so they don't repeat across PDF pages
+		// Radix Avatar: ensure the real photo replaced the fallback before snapshot
+		await page
+			.waitForFunction(
+				() => {
+					const img = document.querySelector('[data-slot="avatar-image"]');
+					return img instanceof HTMLImageElement && img.complete && img.naturalWidth > 0;
+				},
+				{ timeout: 15000 },
+			)
+			.catch(() => console.warn("⚠ avatar image did not confirm loading"));
+		await page.waitForTimeout(500);
+		// hide interactive controls + dev indicator; keep atomic blocks intact across page cuts
 		await page.addStyleTag({
-			content:
-				"header{display:none!important} *{transition:none!important;animation:none!important}",
+			content: `
+				header{display:none!important}
+				nextjs-portal{display:none!important}
+				*{transition:none!important;animation:none!important}
+				[data-slot="card"]{break-inside:avoid}
+				.space-y-6>div,.space-y-4>div{break-inside:avoid}
+				.flex.flex-wrap{break-inside:avoid}
+				h2,h3{break-after:avoid}
+				img,svg{break-inside:avoid}
+			`,
 		});
 		// screen media keeps theme backgrounds; printBackground paints them
 		await page.emulateMedia({ media: "screen" });
