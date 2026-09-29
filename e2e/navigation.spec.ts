@@ -28,6 +28,15 @@ test.describe("navigation", () => {
 		});
 	}
 
+	test("prod serves the expected build (route-truth oracle)", async ({ request }) => {
+		const expected = process.env.EXPECTED_SHA;
+		test.skip(!expected, "EXPECTED_SHA not set (dev run against local server)");
+		const response = await request.get("/api/health");
+		expect(response.status()).toBe(200);
+		const body = (await response.json()) as { commit?: string };
+		expect(body.commit).toBe(expected);
+	});
+
 	test("resume download button opens theme menu", async ({ page }) => {
 		await page.goto("/en");
 		await page.getByRole("button", { name: "Download resume PDF" }).click();
