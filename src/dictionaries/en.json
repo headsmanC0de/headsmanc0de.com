@@ -154,7 +154,7 @@
 		"present": "Present",
 		"items": [
 			{
-				"company": "Moonrock",
+				"company": "Moonrock Software",
 				"position": "Software Engineer / Architect",
 				"period": "July 2024 - Present",
 				"description": "Architecting TypeScript-first web and cross-platform products. Built Bun and Node.js backends, Next.js applications, PostgreSQL data layers, shared monorepo packages, AI workflows with MCP and n8n, and production delivery infrastructure. Deployed Grant Navigator at yankovskayana.com and currently testing it in production."

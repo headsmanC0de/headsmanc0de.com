@@ -1,7 +1,18 @@
 import type { Metadata } from "next";
+import { JetBrains_Mono, Manrope } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import { hasLocale, type Locale, locales } from "@/lib/dictionaries";
 import "../globals.css";
+
+const manrope = Manrope({
+	subsets: ["latin", "cyrillic"],
+	variable: "--font-manrope",
+});
+
+const jetbrainsMono = JetBrains_Mono({
+	subsets: ["latin", "cyrillic"],
+	variable: "--font-jetbrains-mono",
+});
 
 export const metadata: Metadata = {
 	metadataBase: new URL("https://headsmanc0de.com"),
@@ -28,7 +39,7 @@ export default async function RootLayout({ children, params }: LayoutProps) {
 
 	return (
 		<html lang={locale} suppressHydrationWarning>
-			<body className="antialiased">
+			<body className={`${manrope.variable} ${jetbrainsMono.variable} antialiased`}>
 				<ThemeProvider
 					attribute="class"
 					defaultTheme="system"

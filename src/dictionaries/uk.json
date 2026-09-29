@@ -154,7 +154,7 @@
 		"present": "Теперішній час",
 		"items": [
 			{
-				"company": "Moonrock",
+				"company": "Moonrock Software",
 				"position": "Software Engineer / Architect",
 				"period": "Липень 2024 - Теперішній час",
 				"description": "Архітектура TypeScript-first web- і cross-platform продуктів. Backend на Bun і Node.js, Next.js застосунки, PostgreSQL, спільні monorepo-пакети, AI workflow з MCP і n8n та production delivery infrastructure. Розгорнув Grant Navigator на yankovskayana.com і зараз тестую його в production."

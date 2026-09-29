@@ -17,30 +17,30 @@ interface HeroSectionProps {
 export function HeroSection({ dict, experience }: HeroSectionProps) {
 	return (
 		<section className="grid gap-8 py-10 md:grid-cols-[1fr_auto] md:items-end print:grid-cols-[1fr_auto] print:gap-4 print:py-4">
-			<div className="space-y-5">
-				<div className="flex items-center gap-3">
-					<Avatar className="size-20 ring-1 ring-border print:size-14">
-						<AvatarImage src="/avatar.jpg" alt={dict.name} />
-						<AvatarFallback className="text-xl">
-							{dict.name
-								.split(" ")
-								.map((n) => n[0])
-								.join("")
-								.slice(0, 2)}
-						</AvatarFallback>
-					</Avatar>
+			<div className="flex items-center gap-6">
+				<Avatar className="size-36 shrink-0 ring-1 ring-border print:size-24">
+					<AvatarImage src="/avatar.jpg" alt={dict.name} />
+					<AvatarFallback className="text-3xl">
+						{dict.name
+							.split(" ")
+							.map((n) => n[0])
+							.join("")
+							.slice(0, 2)}
+					</AvatarFallback>
+				</Avatar>
+				<div className="space-y-2">
 					<p className="font-mono text-xs uppercase tracking-[0.18em] text-muted-foreground">
 						{dict.greeting}
 					</p>
-				</div>
-				<div className="space-y-3">
-					<h1 className="max-w-3xl text-5xl font-bold leading-[0.95] tracking-[-0.045em] sm:text-6xl print:text-3xl">
+					<h1 className="text-3xl font-bold leading-[0.95] tracking-[-0.045em] sm:text-4xl print:text-3xl">
 						{dict.name}
 					</h1>
-					<p className="max-w-2xl text-xl leading-snug text-foreground/85 print:text-base">
+					<p className="text-base leading-snug text-foreground/85 sm:text-lg print:text-base">
 						{dict.title}
 					</p>
-					<p className="text-sm text-muted-foreground print:text-xs">{dict.subtitle}</p>
+					<p className="max-w-xl text-xs leading-snug text-muted-foreground sm:text-sm print:text-xs">
+						{dict.subtitle}
+					</p>
 				</div>
 			</div>
 			<div className="experience-signal min-w-52 rounded-xl border bg-card p-5 print:min-w-44 print:p-3">
