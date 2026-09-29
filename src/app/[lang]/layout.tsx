@@ -38,8 +38,12 @@ export default async function RootLayout({ children, params }: LayoutProps) {
 	const locale: Locale = hasLocale(lang) ? lang : "en";
 
 	return (
-		<html lang={locale} suppressHydrationWarning>
-			<body className={`${manrope.variable} ${jetbrainsMono.variable} antialiased`}>
+		<html
+			lang={locale}
+			className={`${manrope.variable} ${jetbrainsMono.variable}`}
+			suppressHydrationWarning
+		>
+			<body className="antialiased">
 				<ThemeProvider
 					attribute="class"
 					defaultTheme="system"
