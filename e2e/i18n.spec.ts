@@ -7,9 +7,9 @@ test.describe("i18n", () => {
 		expect(page.url()).toContain("/en");
 	});
 
-	test("/en shows 'Nazar Petryk'", async ({ page }) => {
+	test("/en shows 'Nazariy Petryk'", async ({ page }) => {
 		await page.goto("/en");
-		await expect(page.locator("body")).toContainText("Nazar Petryk");
+		await expect(page.locator("body")).toContainText("Nazariy Petryk");
 	});
 
 	test("/uk shows 'Назарій Петрик'", async ({ page }) => {

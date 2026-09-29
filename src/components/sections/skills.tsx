@@ -25,7 +25,11 @@ export function SkillsSection({ dict }: SkillsSectionProps) {
 							{group.items.map((skill) => (
 								<Badge
 									key={skill}
-									variant={group.kind === "competency" ? "outline" : "secondary"}
+									variant={
+										group.kind === "competency" || group.kind === "learning"
+											? "outline"
+											: "secondary"
+									}
 									className="print:text-xs"
 								>
 									{skill}

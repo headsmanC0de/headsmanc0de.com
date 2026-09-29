@@ -20,9 +20,9 @@ export function ExperienceSection({ dict }: ExperienceSectionProps) {
 		<section className="space-y-4 print:space-y-3">
 			<h2 className="text-2xl font-semibold tracking-tight print:text-xl">{dict.title}</h2>
 			<div className="space-y-6 print:space-y-4">
-				{dict.items.map((item, index) => (
+				{dict.items.map((item) => (
 					<div
-						key={`${item.company}-${index}`}
+						key={`${item.company}-${item.period}`}
 						className="relative pl-4 border-l-2 border-border print:pl-3"
 					>
 						<div className="space-y-1">

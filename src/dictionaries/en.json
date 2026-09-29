@@ -8,7 +8,7 @@
 	},
 	"hero": {
 		"greeting": "Hi, I'm",
-		"name": "Nazar Petryk",
+		"name": "Nazariy Petryk",
 		"title": "Full-Stack Software Engineer / Architect",
 		"subtitle": "TypeScript-first systems · Web, backend and cross-platform · Ternopil, Ukraine",
 		"experienceLabel": "of professional software engineering",
@@ -16,7 +16,7 @@
 	},
 	"about": {
 		"title": "Professional Profile",
-		"description": "I build production web and cross-platform systems from architecture through deployment and operations. My core is TypeScript: Next.js and React applications, Bun and Node.js backends, PostgreSQL data layers, and Turborepo monorepos. I also design AI-enabled workflows with MCP, local LLMs and n8n, using Codex, Claude Code, OpenCode, Gemini CLI and Crush in hands-on development. I focus on maintainable domain models, security and measurable product outcomes."
+		"description": "I build production web and cross-platform systems from architecture through deployment and operations. My core is TypeScript: Next.js and React applications, Bun and Node.js backends, PostgreSQL data layers, and Turborepo monorepos. I also design AI-enabled workflows with MCP, local LLMs and n8n, using Codex, Claude Code, OpenCode, Gemini CLI and Crush in hands-on development. Beyond the web stack I administer Linux infrastructure — Proxmox VE virtualization, virtual machines, SSH and application deployment. Currently expanding into embedded development with ESP32, targeting robotics, UAVs and automated production lines. I focus on maintainable domain models, security and measurable product outcomes."
 	},
 	"skills": {
 		"title": "Technical Stack",
@@ -56,20 +56,35 @@
 			},
 			{
 				"title": "Cross-platform & Delivery",
+				"items": ["Tauri", "Rust", "Expo / React Native", "Turborepo", "Playwright", "Vitest"]
+			},
+			{
+				"title": "DevOps & Infrastructure",
 				"items": [
-					"Tauri",
-					"Rust",
-					"Expo / React Native",
+					"Linux Administration",
+					"Proxmox VE",
+					"Virtual Machines (KVM/QEMU)",
+					"SSH",
 					"Docker",
-					"Turborepo",
-					"Playwright",
-					"Vitest",
-					"Proxmox",
 					"Nginx",
+					"App Deployment & Operations",
 					"Prometheus",
 					"Grafana",
 					"OpenTelemetry",
 					"PostHog"
+				]
+			},
+			{
+				"title": "Embedded & Robotics — Learning",
+				"kind": "learning",
+				"items": [
+					"ESP32",
+					"C/C++ (Embedded)",
+					"MQTT",
+					"Sensors & Actuators",
+					"Robotics",
+					"UAV / Drones",
+					"Automated Production Lines"
 				]
 			},
 			{
@@ -179,6 +194,11 @@
 				"period": "Ongoing"
 			},
 			{
+				"institution": "Currently Learning",
+				"degree": "Embedded Systems: ESP32 → robotics, UAV and industrial automation",
+				"period": "Ongoing"
+			},
+			{
 				"institution": "Languages",
 				"degree": "Ukrainian (Native), English (B2 - Technical)",
 				"period": ""
@@ -216,5 +236,10 @@
 				"value": "headsmanc0de.com"
 			}
 		]
+	},
+	"resume": {
+		"label": "Download resume PDF",
+		"light": "Light theme",
+		"dark": "Dark theme"
 	}
 }

@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { LanguageSwitcher } from "@/components/language-switcher";
 import { ModeToggle } from "@/components/mode-toggle";
+import { ResumeDownload } from "@/components/resume-download";
 import { AboutSection } from "@/components/sections/about";
 import { ContactsSection } from "@/components/sections/contacts";
 import { EducationSection } from "@/components/sections/education";
@@ -36,6 +37,7 @@ export default async function HomePage({ params }: PageProps) {
 		<main className="min-h-screen bg-background print:min-h-0 print:bg-white">
 			{/* Header with controls - hidden in print */}
 			<header className="fixed right-4 top-4 z-50 flex gap-2 print:hidden">
+				<ResumeDownload dict={dict.resume} />
 				<LanguageSwitcher lang={locale} />
 				<ModeToggle />
 			</header>

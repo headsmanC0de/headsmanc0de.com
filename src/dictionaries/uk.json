@@ -16,7 +16,7 @@
 	},
 	"about": {
 		"title": "Професійний профіль",
-		"description": "Створюю production web- і cross-platform системи від архітектури до деплою та експлуатації. Моя основа — TypeScript: Next.js і React застосунки, backend на Bun і Node.js, PostgreSQL та monorepo на Turborepo. Також проєктую AI-enabled workflow з MCP, локальними LLM і n8n та практично використовую Codex, Claude Code, OpenCode, Gemini CLI і Crush у розробці. Приділяю увагу підтримуваним доменним моделям, безпеці та вимірюваним продуктовим результатам."
+		"description": "Створюю production web- і cross-platform системи від архітектури до деплою та експлуатації. Моя основа — TypeScript: Next.js і React застосунки, backend на Bun і Node.js, PostgreSQL та monorepo на Turborepo. Також проєктую AI-enabled workflow з MCP, локальними LLM і n8n та практично використовую Codex, Claude Code, OpenCode, Gemini CLI і Crush у розробці. Окрім web-стеку адмініструю Linux-інфраструктуру — віртуалізацію Proxmox VE, віртуальні машини, SSH та деплой застосунків. Зараз поглиблююсь у embedded-розробку на ESP32 з ціллю робототехніки, БПЛА та автоматизованих ліній. Приділяю увагу підтримуваним доменним моделям, безпеці та вимірюваним продуктовим результатам."
 	},
 	"skills": {
 		"title": "Технічний стек",
@@ -56,20 +56,35 @@
 			},
 			{
 				"title": "Cross-platform та Delivery",
+				"items": ["Tauri", "Rust", "Expo / React Native", "Turborepo", "Playwright", "Vitest"]
+			},
+			{
+				"title": "DevOps та інфраструктура",
 				"items": [
-					"Tauri",
-					"Rust",
-					"Expo / React Native",
+					"Адміністрування Linux",
+					"Proxmox VE",
+					"Віртуальні машини (KVM/QEMU)",
+					"SSH",
 					"Docker",
-					"Turborepo",
-					"Playwright",
-					"Vitest",
-					"Proxmox",
 					"Nginx",
+					"Деплой та експлуатація застосунків",
 					"Prometheus",
 					"Grafana",
 					"OpenTelemetry",
 					"PostHog"
+				]
+			},
+			{
+				"title": "Embedded та робототехніка — вивчаю",
+				"kind": "learning",
+				"items": [
+					"ESP32",
+					"C/C++ (Embedded)",
+					"MQTT",
+					"Сенсори та актуатори",
+					"Робототехніка",
+					"БПЛА / дрони",
+					"Автоматизовані лінії"
 				]
 			},
 			{
@@ -179,6 +194,11 @@
 				"period": "Постійно"
 			},
 			{
+				"institution": "Зараз вивчаю",
+				"degree": "Embedded-системи: ESP32 → робототехніка, БПЛА та промислова автоматизація",
+				"period": "Постійно"
+			},
+			{
 				"institution": "Мови",
 				"degree": "Українська (рідна), Англійська (B2 - технічна)",
 				"period": ""
@@ -216,5 +236,10 @@
 				"value": "headsmanc0de.com"
 			}
 		]
+	},
+	"resume": {
+		"label": "Завантажити резюме PDF",
+		"light": "Світла тема",
+		"dark": "Темна тема"
 	}
 }

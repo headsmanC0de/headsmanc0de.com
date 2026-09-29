@@ -1,24 +1,13 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import { hasLocale, type Locale, locales } from "@/lib/dictionaries";
 import "../globals.css";
 
-const geistSans = Geist({
-	variable: "--font-geist-sans",
-	subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-	variable: "--font-geist-mono",
-	subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
 	metadataBase: new URL("https://headsmanc0de.com"),
-	title: "Nazar Petryk — Full-Stack Software Engineer / Architect",
+	title: "Nazariy Petryk — Full-Stack Software Engineer / Architect",
 	description:
-		"Portfolio and experience of Nazar Petryk, a TypeScript-focused full-stack software engineer and architect.",
+		"Portfolio and experience of Nazariy Petryk, a TypeScript-focused full-stack software engineer and architect.",
 	alternates: {
 		canonical: "https://headsmanc0de.com",
 	},
@@ -39,7 +28,7 @@ export default async function RootLayout({ children, params }: LayoutProps) {
 
 	return (
 		<html lang={locale} suppressHydrationWarning>
-			<body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+			<body className="antialiased">
 				<ThemeProvider
 					attribute="class"
 					defaultTheme="system"

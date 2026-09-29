@@ -19,9 +19,9 @@ export function HeroSection({ dict, experience }: HeroSectionProps) {
 		<section className="grid gap-8 py-10 md:grid-cols-[1fr_auto] md:items-end print:grid-cols-[1fr_auto] print:gap-4 print:py-4">
 			<div className="space-y-5">
 				<div className="flex items-center gap-3">
-					<Avatar className="size-14 ring-1 ring-border print:size-12">
+					<Avatar className="size-20 ring-1 ring-border print:size-14">
 						<AvatarImage src="/avatar.jpg" alt={dict.name} />
-						<AvatarFallback className="text-lg">
+						<AvatarFallback className="text-xl">
 							{dict.name
 								.split(" ")
 								.map((n) => n[0])
