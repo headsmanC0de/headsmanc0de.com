@@ -52,7 +52,7 @@ sh(
 );
 
 // 4. restart + verify direct
-sh(`ssh ${HOST} "docker compose -p ${PROJECT} up -d && sleep 3 && curl -sf http://127.0.0.1:3300/api/health | grep -q ${sha}"`);
+sh(`ssh ${HOST} "cd ${COMPOSE_DIR} && docker compose -p ${PROJECT} up -d && sleep 3 && curl -sf http://127.0.0.1:3300/api/health | grep -q ${sha}"`);
 console.log(`✓ direct verify ok (rollback digest in ${COMPOSE_DIR}/.rollback-digest on ${HOST})`);
 
 // 5. prod e2e through the edge
