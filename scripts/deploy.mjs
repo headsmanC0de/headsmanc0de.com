@@ -55,7 +55,24 @@ sh(
 sh(`ssh ${HOST} "cd ${COMPOSE_DIR} && docker compose -p ${PROJECT} up -d && sleep 3 && curl -sf http://127.0.0.1:3300/api/health | grep -q ${sha}"`);
 console.log(`✓ direct verify ok (rollback digest in ${COMPOSE_DIR}/.rollback-digest on ${HOST})`);
 
-// 5. prod e2e through the edge
+// 5. wait until the edge serves this exact build (tunnel reconnect latency)
+if (!process.argv.includes("--skip-e2e")) {
+	const deadline = Date.now() + 60_000;
+	for (;;) {
+		try {
+			const r = await fetch(`https://headsmanc0de.com/api/health`);
+			if (r.ok && (await r.json()).commit === sha) break;
+		} catch {}
+		if (Date.now() > deadline) {
+			console.error(`\u2717 edge not serving ${sha} within 60s`);
+			process.exit(1);
+		}
+		await new Promise((resolve) => setTimeout(resolve, 2000));
+	}
+	console.log(`\u2713 edge serves ${sha}`);
+}
+
+// 6. prod e2e through the edge
 if (!process.argv.includes("--skip-e2e")) {
 	sh(`BASE_URL=https://headsmanc0de.com EXPECTED_SHA=${sha} bun run test:e2e`);
 }
