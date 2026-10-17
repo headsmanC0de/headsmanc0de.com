@@ -75,11 +75,12 @@
 				]
 			},
 			{
-				"title": "Embedded & Robotics — Learning",
-				"kind": "learning",
+				"title": "Embedded & IoT",
 				"items": [
 					"ESP32",
 					"C/C++ (Embedded)",
+					"Python",
+					"Zig",
 					"MQTT",
 					"Sensors & Actuators",
 					"Robotics",
@@ -157,7 +158,7 @@
 				"company": "Moonrock Software",
 				"position": "Software Engineer / Architect",
 				"period": "July 2024 - Present",
-				"description": "Architecting TypeScript-first web and cross-platform products. Built Bun and Node.js backends, Next.js applications, PostgreSQL data layers, shared monorepo packages, AI workflows with MCP and n8n, and production delivery infrastructure. Deployed Grant Navigator at yankovskayana.com and currently testing it in production."
+				"description": "Architecting TypeScript-first web and cross-platform products. Built Bun and Node.js backends, Next.js applications, PostgreSQL data layers, shared monorepo packages, AI workflows with MCP and n8n, and production delivery infrastructure. Developing embedded and IoT solutions on ESP32 with C/C++, Python and Zig. Deployed Grant Navigator at yankovskayana.com and currently testing it in production."
 			},
 			{
 				"company": "Pilzi",

@@ -75,11 +75,12 @@
 				]
 			},
 			{
-				"title": "Embedded та робототехніка — вивчаю",
-				"kind": "learning",
+				"title": "Embedded та IoT",
 				"items": [
 					"ESP32",
 					"C/C++ (Embedded)",
+					"Python",
+					"Zig",
 					"MQTT",
 					"Сенсори та актуатори",
 					"Робототехніка",
@@ -157,7 +158,7 @@
 				"company": "Moonrock Software",
 				"position": "Software Engineer / Architect",
 				"period": "Липень 2024 - Теперішній час",
-				"description": "Архітектура TypeScript-first web- і cross-platform продуктів. Backend на Bun і Node.js, Next.js застосунки, PostgreSQL, спільні monorepo-пакети, AI workflow з MCP і n8n та production delivery infrastructure. Розгорнув Grant Navigator на yankovskayana.com і зараз тестую його в production."
+				"description": "Архітектура TypeScript-first web- і cross-platform продуктів. Backend на Bun і Node.js, Next.js застосунки, PostgreSQL, спільні monorepo-пакети, AI workflow з MCP і n8n та production delivery infrastructure. Розробка embedded- та IoT-рішень на ESP32 з C/C++, Python і Zig. Розгорнув Grant Navigator на yankovskayana.com і зараз тестую його в production."
 			},
 			{
 				"company": "Pilzi",
